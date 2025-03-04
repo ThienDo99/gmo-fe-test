@@ -1,0 +1,933 @@
+{
+    "video_link": "https://youtu.be/dLC54mz--Dk",
+    "items": [
+        {
+            "id": "C9692C29-FC1D-4E1C-855446F34DB1728D",
+            "url": "https://www.ikea.com/ext/ingkadam/m/225cef308701ec4d/original/PH168764-crop002.jpg",
+            "altText": "Bedroom with green walls, green rug, white day bed with two drawers, white storage unit and floor lamp.",
+            "products": [
+                {
+                    "id": "30503655",
+                    "dotCoordinates": {
+                        "x": 14.899999999999999,
+                        "y": 72.3
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/brimnes-day-bed-frame-with-2-drawers-white-30503655/",
+                    "tagPosition": "top-left",
+                    "index": 0,
+                    "imageId": "C9692C29-FC1D-4E1C-855446F34DB1728D",
+                    "hide": true
+                },
+                {
+                    "id": "60423209",
+                    "dotCoordinates": {
+                        "x": 23.9,
+                        "y": 48.5
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/bergpalm-duvet-cover-and-pillowcase-green-stripe-60423209/",
+                    "tagPosition": "right",
+                    "index": 1,
+                    "imageId": "C9692C29-FC1D-4E1C-855446F34DB1728D",
+                    "hide": true
+                }
+            ],
+            "index": 0
+        },
+        {
+            "id": "E3799B41-AB34-41E6-B5B2DCE0BEEF7B1E",
+            "url": "https://www.ikea.com/ext/ingkadam/m/27a7e5a3df6219f7/original/PH163688-crop001.jpg",
+            "altText": "White HEMNES dressing table with built-in mirror in a white room next to a HEMNES bed with pillows and a yellow quilt.",
+            "products": [
+                {
+                    "id": "10355670",
+                    "dotCoordinates": {
+                        "x": 67,
+                        "y": 63.9
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/hemnes-dressing-table-with-mirror-white-10355670/",
+                    "tagPosition": "left",
+                    "index": 0,
+                    "imageId": "E3799B41-AB34-41E6-B5B2DCE0BEEF7B1E",
+                    "hide": true
+                },
+                {
+                    "id": "00362727",
+                    "dotCoordinates": {
+                        "x": 41.6,
+                        "y": 70.3
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ingolf-stool-white-00362727/",
+                    "tagPosition": "top",
+                    "index": 1,
+                    "imageId": "E3799B41-AB34-41E6-B5B2DCE0BEEF7B1E",
+                    "hide": true
+                },
+                {
+                    "id": "s19198398",
+                    "dotCoordinates": {
+                        "x": 40.300000000000004,
+                        "y": 31.4
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/hemnes-bed-frame-white-stain-s19198398/",
+                    "tagPosition": "bottom",
+                    "index": 2,
+                    "imageId": "E3799B41-AB34-41E6-B5B2DCE0BEEF7B1E",
+                    "hide": true
+                },
+                {
+                    "id": "60328146",
+                    "dotCoordinates": {
+                        "x": 77.8,
+                        "y": 42.8
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/fryken-box-with-lid-set-of-3-seagrass-60328146/",
+                    "tagPosition": "left",
+                    "index": 3,
+                    "imageId": "E3799B41-AB34-41E6-B5B2DCE0BEEF7B1E",
+                    "hide": true
+                }
+            ],
+            "index": 1
+        },
+        {
+            "id": "9F9155BC-29B4-44FE-A60851C219DCDD83",
+            "url": "https://www.ikea.com/ext/ingkadam/m/6ae56a720626b004/original/PH164216-crop002.jpg",
+            "altText": "HEMNES daybed made up with quilts and pillows. Three pull-out drawers are built into the bedframe.",
+            "products": [
+                {
+                    "id": "70349327",
+                    "dotCoordinates": {
+                        "x": 40.8,
+                        "y": 83.6
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/hemnes-day-bed-frame-with-3-drawers-white-70349327/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "9F9155BC-29B4-44FE-A60851C219DCDD83",
+                    "hide": true
+                },
+                {
+                    "id": "50423262",
+                    "dotCoordinates": {
+                        "x": 64.1,
+                        "y": 71.6
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/bergpalm-duvet-cover-and-pillowcase-grey-stripe-50423262/",
+                    "tagPosition": "top",
+                    "index": 1,
+                    "imageId": "9F9155BC-29B4-44FE-A60851C219DCDD83",
+                    "hide": true
+                },
+                {
+                    "id": "10444469",
+                    "dotCoordinates": {
+                        "x": 86.8,
+                        "y": 55.60000000000001
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/resgods-bed-tray-bamboo-10444469/",
+                    "tagPosition": "left",
+                    "index": 2,
+                    "imageId": "9F9155BC-29B4-44FE-A60851C219DCDD83",
+                    "hide": true
+                }
+            ],
+            "index": 2
+        },
+        {
+            "id": "5354D0CE-CA56-4137-9D06B042C8F402EC",
+            "url": "https://www.ikea.com/ext/ingkadam/m/6940fa8d7d64d173/original/PE816547-crop001.jpg",
+            "altText": "A smiling man sitting on a dark red ÄPPLARYD sofa holding a magazine. A guitar is on the floor at the other end of the sofa.",
+            "products": [
+                {
+                    "id": "00504307",
+                    "dotCoordinates": {
+                        "x": 56.89999999999999,
+                        "y": 57.49999999999999
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/aepplaryd-3-seat-sofa-djuparp-red-brown-00504307/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "5354D0CE-CA56-4137-9D06B042C8F402EC",
+                    "hide": true
+                },
+                {
+                    "id": "10497580",
+                    "dotCoordinates": {
+                        "x": 32.6,
+                        "y": 69.19999999999999
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/froetorp-side-table-anthracite-marble-effect-black-glass-10497580/",
+                    "tagPosition": "top-left",
+                    "index": 1,
+                    "imageId": "5354D0CE-CA56-4137-9D06B042C8F402EC",
+                    "hide": true
+                },
+                {
+                    "id": "70405525",
+                    "dotCoordinates": {
+                        "x": 77.9,
+                        "y": 25.4
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/skaftet-floor-lamp-base-arched-black-70405525/",
+                    "tagPosition": "bottom-right",
+                    "index": 2,
+                    "imageId": "5354D0CE-CA56-4137-9D06B042C8F402EC",
+                    "hide": true
+                },
+                {
+                    "id": "90464279",
+                    "dotCoordinates": {
+                        "x": 7.199999999999999,
+                        "y": 39.7
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/solklint-table-lamp-brass-grey-clear-glass-90464279/",
+                    "tagPosition": "right",
+                    "index": 3,
+                    "imageId": "5354D0CE-CA56-4137-9D06B042C8F402EC",
+                    "hide": true
+                },
+                {
+                    "id": "50497583",
+                    "dotCoordinates": {
+                        "x": 68.60000000000001,
+                        "y": 74.4
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/froetorp-coffee-table-anthracite-marble-effect-black-glass-50497583/",
+                    "tagPosition": "top-right",
+                    "index": 4,
+                    "imageId": "5354D0CE-CA56-4137-9D06B042C8F402EC",
+                    "hide": true
+                }
+            ],
+            "index": 3
+        },
+        {
+            "id": "0198F7F9-CEBD-4573-8329A01798AB647F",
+            "url": "https://www.ikea.com/ext/ingkadam/m/c2cb76cd457a0cd/original/PH165571-crop001.jpg",
+            "altText": "A bamboo NORDKISA dressing table used as a laptop desk in front of a big window by a wall of shelves with books and boxes.",
+            "products": [
+                {
+                    "id": "00439473",
+                    "dotCoordinates": {
+                        "x": 49.6,
+                        "y": 72.3
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/nordkisa-dressing-table-bamboo-00439473/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "0198F7F9-CEBD-4573-8329A01798AB647F",
+                    "hide": true
+                },
+                {
+                    "id": "70172205",
+                    "dotCoordinates": {
+                        "x": 83,
+                        "y": 32.2
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/merete-room-darkening-curtains-1-pair-with-eyelets-white-70172205/",
+                    "tagPosition": "bottom-right",
+                    "index": 1,
+                    "imageId": "0198F7F9-CEBD-4573-8329A01798AB647F",
+                    "hide": true
+                }
+            ],
+            "index": 4
+        },
+        {
+            "id": "DBE7D88D-9C98-473D-AF020EB1B635A43F",
+            "url": "https://www.ikea.com/ext/ingkadam/m/6ef25ff4cc786781/original/PH163702-crop001.jpg",
+            "altText": "White SONGESAND bed frame in a room with wood flooring and white rugs. The bed is made up in blue and pink bed linens.",
+            "products": [
+                {
+                    "id": "60372511",
+                    "dotCoordinates": {
+                        "x": 58.599999999999994,
+                        "y": 72.7
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/songesand-bed-frame-white-60372511/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "DBE7D88D-9C98-473D-AF020EB1B635A43F",
+                    "hide": true
+                },
+                {
+                    "id": "80372505",
+                    "dotCoordinates": {
+                        "x": 58.599999999999994,
+                        "y": 72.7
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/songesand-bed-frame-white-80372505/",
+                    "tagPosition": "top",
+                    "index": 1,
+                    "imageId": "DBE7D88D-9C98-473D-AF020EB1B635A43F",
+                    "hide": true
+                },
+                {
+                    "id": "60163876",
+                    "dotCoordinates": {
+                        "x": 78.3,
+                        "y": 20
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/arstid-wall-lamp-nickel-plated-white-60163876/",
+                    "tagPosition": "bottom-right",
+                    "index": 2,
+                    "imageId": "DBE7D88D-9C98-473D-AF020EB1B635A43F",
+                    "hide": true
+                },
+                {
+                    "id": "60357474",
+                    "dotCoordinates": {
+                        "x": 19.5,
+                        "y": 50.2
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/tyssedal-bedside-table-white-60357474/",
+                    "tagPosition": "right",
+                    "index": 3,
+                    "imageId": "DBE7D88D-9C98-473D-AF020EB1B635A43F",
+                    "hide": true
+                }
+            ],
+            "index": 5
+        },
+        {
+            "id": "B92EB3E0-CEA1-41A4-AC13292D2B8D12FF",
+            "url": "https://www.ikea.com/ext/ingkadam/m/1db8f79ff48fa494/original/PH159464-crop001.jpg",
+            "altText": "An INGO table in pine has a sewing project on it by two stools, two hanging lamps, a white wardrobe and metal drawers.",
+            "products": [
+                {
+                    "id": "60161797",
+                    "dotCoordinates": {
+                        "x": 51.9,
+                        "y": 70
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ingo-table-pine-60161797/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "B92EB3E0-CEA1-41A4-AC13292D2B8D12FF",
+                    "hide": true
+                },
+                {
+                    "id": "00362727",
+                    "dotCoordinates": {
+                        "x": 26,
+                        "y": 80.4
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ingolf-stool-white-00362727/",
+                    "tagPosition": "top-left",
+                    "index": 1,
+                    "imageId": "B92EB3E0-CEA1-41A4-AC13292D2B8D12FF",
+                    "hide": true
+                },
+                {
+                    "id": "90251046",
+                    "dotCoordinates": {
+                        "x": 81.2,
+                        "y": 73
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/helmer-drawer-unit-on-castors-white-90251046/",
+                    "tagPosition": "top-right",
+                    "index": 2,
+                    "imageId": "B92EB3E0-CEA1-41A4-AC13292D2B8D12FF",
+                    "hide": true
+                },
+                {
+                    "id": "20368832",
+                    "dotCoordinates": {
+                        "x": 16.3,
+                        "y": 53.1
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/sundvik-wardrobe-white-20368832/",
+                    "tagPosition": "right",
+                    "index": 3,
+                    "imageId": "B92EB3E0-CEA1-41A4-AC13292D2B8D12FF",
+                    "hide": true
+                },
+                {
+                    "id": "60171329",
+                    "dotCoordinates": {
+                        "x": 64.2,
+                        "y": 37.1
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/heat-pot-stand-cork-60171329/",
+                    "tagPosition": "top",
+                    "index": 4,
+                    "imageId": "B92EB3E0-CEA1-41A4-AC13292D2B8D12FF",
+                    "hide": true
+                }
+            ],
+            "index": 0
+        },
+        {
+            "id": "458DA50A-B2FB-42D5-B140F63C4D781386",
+            "url": "https://www.ikea.com/ext/ingkadam/m/7ed682d58b923420/original/PH164725-crop001.jpg",
+            "altText": "GODISHUS wardrobe in a blue bedroom next to a bed. The wardrobe is open and filled with folded and hanging clothes.",
+            "products": [
+                {
+                    "id": "30433484",
+                    "dotCoordinates": {
+                        "x": 51.7,
+                        "y": 44.3
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/godishus-wardrobe-white-30433484/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "458DA50A-B2FB-42D5-B140F63C4D781386",
+                    "hide": true
+                },
+                {
+                    "id": "80245881",
+                    "dotCoordinates": {
+                        "x": 24.2,
+                        "y": 25.5
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/skubb-storage-with-6-compartments-white-80245881/",
+                    "tagPosition": "bottom-left",
+                    "index": 1,
+                    "imageId": "458DA50A-B2FB-42D5-B140F63C4D781386",
+                    "hide": true
+                },
+                {
+                    "id": "00381599",
+                    "dotCoordinates": {
+                        "x": 71.5,
+                        "y": 25.3
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/fubbla-led-wall-lamp-white-00381599/",
+                    "tagPosition": "bottom-right",
+                    "index": 2,
+                    "imageId": "458DA50A-B2FB-42D5-B140F63C4D781386",
+                    "hide": true
+                },
+                {
+                    "id": "40253811",
+                    "dotCoordinates": {
+                        "x": 83.3,
+                        "y": 41.8
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/kura-reversible-bed-white-pine-40253811/",
+                    "tagPosition": "left",
+                    "index": 3,
+                    "imageId": "458DA50A-B2FB-42D5-B140F63C4D781386",
+                    "hide": true
+                }
+            ],
+            "index": 1
+        },
+        {
+            "id": "C0852402-93EE-42D5-ABCD304509E3D6DF",
+            "url": "https://www.ikea.com/ext/ingkadam/m/3b65774f837f90fd/original/PH153246-crop008.jpg",
+            "altText": "A seating area of a pink and white living room has a light green/wood LANDSKRONA three-seat sofa beside a matching armchair.",
+            "products": [
+                {
+                    "id": "s19270327",
+                    "dotCoordinates": {
+                        "x": 79.7,
+                        "y": 64.60000000000001
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/landskrona-3-seat-sofa-gunnared-light-green-wood-s19270327/",
+                    "tagPosition": "left",
+                    "index": 0,
+                    "imageId": "C0852402-93EE-42D5-ABCD304509E3D6DF",
+                    "hide": true
+                },
+                {
+                    "id": "s39269728",
+                    "dotCoordinates": {
+                        "x": 23.599999999999998,
+                        "y": 71.2
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/landskrona-armchair-gunnared-light-green-wood-s39269728/",
+                    "tagPosition": "top-left",
+                    "index": 1,
+                    "imageId": "C0852402-93EE-42D5-ABCD304509E3D6DF",
+                    "hide": true
+                }
+            ],
+            "index": 2
+        },
+        {
+            "id": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
+            "url": "https://www.ikea.com/ext/ingkadam/m/3a4786437483abbd/original/PH180015-crop001.jpg",
+            "altText": "A white EKENABBEN open shelving unit holds plates, glasses, and a champagne bowl; fairy lights are strung around the unit.",
+            "products": [
+                {
+                    "id": "90487817",
+                    "dotCoordinates": {
+                        "x": 62.1,
+                        "y": 60.199999999999996
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ekenabben-open-shelving-unit-aspen-white-90487817/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
+                    "hide": true
+                },
+                {
+                    "id": "30320806",
+                    "dotCoordinates": {
+                        "x": 72.39999999999999,
+                        "y": 13.700000000000001
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/skadis-pegboard-white-30320806/",
+                    "tagPosition": "bottom-right",
+                    "index": 1,
+                    "imageId": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
+                    "hide": true
+                },
+                {
+                    "id": "40320797",
+                    "dotCoordinates": {
+                        "x": 55.900000000000006,
+                        "y": 27.500000000000004
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/skadis-container-white-40320797/",
+                    "tagPosition": "bottom",
+                    "index": 2,
+                    "imageId": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
+                    "hide": true
+                },
+                {
+                    "id": "80137805",
+                    "dotCoordinates": {
+                        "x": 71.39999999999999,
+                        "y": 25
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/svalka-champagne-glass-clear-glass-80137805/",
+                    "tagPosition": "bottom-right",
+                    "index": 3,
+                    "imageId": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
+                    "hide": true
+                },
+                {
+                    "id": "70421016",
+                    "dotCoordinates": {
+                        "x": 88,
+                        "y": 40.1
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ledfyr-led-lighting-chain-with-24-lights-indoor-silver-colour-70421016/",
+                    "tagPosition": "left",
+                    "index": 4,
+                    "imageId": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
+                    "hide": true
+                },
+                {
+                    "id": "80420040",
+                    "dotCoordinates": {
+                        "x": 21.9,
+                        "y": 62.9
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/kyrre-stool-birch-80420040/",
+                    "tagPosition": "right",
+                    "index": 5,
+                    "imageId": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
+                    "hide": true
+                }
+            ],
+            "index": 3
+        },
+        {
+            "id": "576528D7-D098-490B-97168B9A4F3DDF5E",
+            "url": "https://www.ikea.com/ext/ingkadam/m/991807d01cb80bc/original/PH167341-crop001.jpg",
+            "altText": "Bedroom with grey walls, bunk bed, multiple cushions, tray table, two work lamps, and high pile rug.",
+            "products": [
+                {
+                    "id": "00368772",
+                    "dotCoordinates": {
+                        "x": 64.5,
+                        "y": 33.4
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/mydal-bunk-bed-frame-pine-00368772/",
+                    "tagPosition": "bottom",
+                    "index": 0,
+                    "imageId": "576528D7-D098-490B-97168B9A4F3DDF5E",
+                    "hide": true
+                },
+                {
+                    "id": "50355395",
+                    "dotCoordinates": {
+                        "x": 28.799999999999997,
+                        "y": 18.9
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/tertial-work-lamp-dark-grey-50355395/",
+                    "tagPosition": "bottom-left",
+                    "index": 1,
+                    "imageId": "576528D7-D098-490B-97168B9A4F3DDF5E",
+                    "hide": true
+                },
+                {
+                    "id": "00411997",
+                    "dotCoordinates": {
+                        "x": 29.7,
+                        "y": 78.10000000000001
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/gladom-tray-table-black-00411997/",
+                    "tagPosition": "top-left",
+                    "index": 2,
+                    "imageId": "576528D7-D098-490B-97168B9A4F3DDF5E",
+                    "hide": true
+                }
+            ],
+            "index": 4
+        },
+        {
+            "id": "337571F1-DF56-4704-847587CEC8088CD4",
+            "url": "https://www.ikea.com/ext/ingkadam/m/6dc2f6f5c3e8d48d/original/PH156888-crop001.jpg",
+            "altText": "A white HEMNES dressing table with mirror has perfumes, flowers and makeup on top and a white stool underneath.",
+            "products": [
+                {
+                    "id": "10355670",
+                    "dotCoordinates": {
+                        "x": 57.49999999999999,
+                        "y": 56.00000000000001
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/hemnes-dressing-table-with-mirror-white-10355670/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "337571F1-DF56-4704-847587CEC8088CD4",
+                    "hide": true
+                },
+                {
+                    "id": "00362727",
+                    "dotCoordinates": {
+                        "x": 39.7,
+                        "y": 72.7
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ingolf-stool-white-00362727/",
+                    "tagPosition": "top",
+                    "index": 1,
+                    "imageId": "337571F1-DF56-4704-847587CEC8088CD4",
+                    "hide": true
+                }
+            ],
+            "index": 5
+        },
+        {
+            "id": "8A460AC3-3B3E-4AD6-B024CAA09B6A8204",
+            "url": "https://www.ikea.com/ext/ingkadam/m/38cf5dbda7adc129/original/PH166124-crop001.jpg",
+            "altText": "Living room with shelving unit made of metal and wood, wall shelf, drawer, glass vase, wall uplighter and white armchair. ",
+            "products": [
+                {
+                    "id": "80339295",
+                    "dotCoordinates": {
+                        "x": 38.4,
+                        "y": 70.39999999999999
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/fjaellbo-shelving-unit-black-80339295/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "8A460AC3-3B3E-4AD6-B024CAA09B6A8204",
+                    "hide": true
+                },
+                {
+                    "id": "s79276816",
+                    "dotCoordinates": {
+                        "x": 27.800000000000004,
+                        "y": 23.5
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ikea-365-jar-with-lid-glass-s79276816/",
+                    "tagPosition": "bottom-left",
+                    "index": 1,
+                    "imageId": "8A460AC3-3B3E-4AD6-B024CAA09B6A8204",
+                    "hide": true
+                },
+                {
+                    "id": "00430585",
+                    "dotCoordinates": {
+                        "x": 65.10000000000001,
+                        "y": 30.5
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/fjaellbo-wall-shelf-black-00430585/",
+                    "tagPosition": "bottom-right",
+                    "index": 2,
+                    "imageId": "8A460AC3-3B3E-4AD6-B024CAA09B6A8204",
+                    "hide": true
+                }
+            ],
+            "index": 0
+        },
+        {
+            "id": "0C721E66-BDED-4845-9A1D395D3CD0B2FA",
+            "url": "https://www.ikea.com/ext/ingkadam/m/45446d72d4546af3/original/PH166549-crop001.jpg",
+            "altText": "A cube-style, white KALLAX shelving unit is mounted on a wall, holding jars and pots. An identical, empty unit sits below.",
+            "products": [
+                {
+                    "id": "70351886",
+                    "dotCoordinates": {
+                        "x": 41.6,
+                        "y": 34.9
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/kallax-shelving-unit-white-70351886/",
+                    "tagPosition": "bottom",
+                    "index": 0,
+                    "imageId": "0C721E66-BDED-4845-9A1D395D3CD0B2FA",
+                    "hide": true
+                },
+                {
+                    "id": "70335995",
+                    "dotCoordinates": {
+                        "x": 70.8,
+                        "y": 58.699999999999996
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/tidvatten-vase-clear-glass-70335995/",
+                    "tagPosition": "left",
+                    "index": 1,
+                    "imageId": "0C721E66-BDED-4845-9A1D395D3CD0B2FA",
+                    "hide": true
+                },
+                {
+                    "id": "50423506",
+                    "dotCoordinates": {
+                        "x": 45.4,
+                        "y": 54.400000000000006
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/omtaenksam-vase-light-grey-50423506/",
+                    "tagPosition": "top",
+                    "index": 2,
+                    "imageId": "0C721E66-BDED-4845-9A1D395D3CD0B2FA",
+                    "hide": true
+                }
+            ],
+            "index": 1
+        },
+        {
+            "id": "4095C03C-308E-42ED-BC82451EDAB1E046",
+            "url": "https://www.ikea.com/ext/ingkadam/m/2d64740367f94444/original/PH156720-crop001.jpg",
+            "altText": "A stainless steel KUNGSFORS kitchen trolley stands by a computer and a window. The trolley is filled with snacks and drinks.",
+            "products": [
+                {
+                    "id": "90334933",
+                    "dotCoordinates": {
+                        "x": 68.4,
+                        "y": 71.89999999999999
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/kungsfors-kitchen-trolley-stainless-steel-90334933/",
+                    "tagPosition": "top-right",
+                    "index": 0,
+                    "imageId": "4095C03C-308E-42ED-BC82451EDAB1E046",
+                    "hide": true
+                },
+                {
+                    "id": "40354278",
+                    "dotCoordinates": {
+                        "x": 32.1,
+                        "y": 55.800000000000004
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/micke-desk-white-40354278/",
+                    "tagPosition": "right",
+                    "index": 1,
+                    "imageId": "4095C03C-308E-42ED-BC82451EDAB1E046",
+                    "hide": true
+                }
+            ],
+            "index": 2
+        },
+        {
+            "id": "2E3CACAF-E1A0-4389-836258DD8850D258",
+            "url": "https://www.ikea.com/ext/ingkadam/m/20e2f9f87ca15a51/original/PH170089-crop001.jpg",
+            "altText": "Living room with green walls, woman sitting on an armchair with her legs resting on a footstool, floor lamp, and plant stand.",
+            "products": [
+                {
+                    "id": "s39269728",
+                    "dotCoordinates": {
+                        "x": 63.800000000000004,
+                        "y": 57.599999999999994
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/landskrona-armchair-gunnared-light-green-wood-s39269728/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "2E3CACAF-E1A0-4389-836258DD8850D258",
+                    "hide": true
+                },
+                {
+                    "id": "s99269749",
+                    "dotCoordinates": {
+                        "x": 30.9,
+                        "y": 73.5
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/landskrona-footstool-gunnared-light-green-wood-s99269749/",
+                    "tagPosition": "top-left",
+                    "index": 1,
+                    "imageId": "2E3CACAF-E1A0-4389-836258DD8850D258",
+                    "hide": true
+                }
+            ],
+            "index": 3
+        },
+        {
+            "id": "D759AD64-405F-421D-94FAC855C6FC1603",
+            "url": "https://www.ikea.com/ext/ingkadam/m/223b70c325df2cf7/original/PH176679.jpg",
+            "altText": "An armchair next to a glass-door cabinet filled with crafts accessories collected in DRÖNA boxes and DRÖNJÖNS magazine files.",
+            "products": [
+                {
+                    "id": "70262828",
+                    "dotCoordinates": {
+                        "x": 20.3,
+                        "y": 80.2
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/droena-box-white-70262828/",
+                    "tagPosition": "top-left",
+                    "index": 0,
+                    "imageId": "D759AD64-405F-421D-94FAC855C6FC1603",
+                    "hide": true
+                },
+                {
+                    "id": "80439695",
+                    "dotCoordinates": {
+                        "x": 19.900000000000002,
+                        "y": 50.3
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/droenjoens-magazine-file-white-80439695/",
+                    "tagPosition": "right",
+                    "index": 1,
+                    "imageId": "D759AD64-405F-421D-94FAC855C6FC1603",
+                    "hide": true
+                }
+            ],
+            "index": 4
+        },
+        {
+            "id": "3CA1D0BC-11F5-41D9-931C183377528016",
+            "url": "https://www.ikea.com/ext/ingkadam/m/528bbba4714906a5/original/PE817190-crop001.jpg",
+            "altText": "A round light wood BORGEBY table in front of a green sofa with playing cards, a block candle and a pair of spectacles on top.",
+            "products": [
+                {
+                    "id": "70449402",
+                    "dotCoordinates": {
+                        "x": 54.400000000000006,
+                        "y": 80.80000000000001
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/borgeby-coffee-table-birch-veneer-70449402/",
+                    "tagPosition": "top",
+                    "index": 0,
+                    "imageId": "3CA1D0BC-11F5-41D9-931C183377528016",
+                    "hide": true
+                },
+                {
+                    "id": "90344989",
+                    "dotCoordinates": {
+                        "x": 13.8,
+                        "y": 91
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/vindum-rug-high-pile-white-90344989/",
+                    "tagPosition": "top-left",
+                    "index": 1,
+                    "imageId": "3CA1D0BC-11F5-41D9-931C183377528016",
+                    "hide": true
+                }
+            ],
+            "index": 5
+        },
+        {
+            "id": "C624D591-655E-45E4-AE7A97AD67A96749",
+            "url": "https://www.ikea.com/ext/ingkadam/m/58a1fdb923a03f1/original/PH158563-crop001.jpg",
+            "altText": "An aerial view of a confetti-covered floor with different stools and a solid birch RÖNNINGE chair that has a curved backrest.",
+            "products": [
+                {
+                    "id": "80400754",
+                    "dotCoordinates": {
+                        "x": 73.1,
+                        "y": 43.4
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/roenninge-chair-birch-80400754/",
+                    "tagPosition": "left",
+                    "index": 0,
+                    "imageId": "C624D591-655E-45E4-AE7A97AD67A96749",
+                    "hide": true
+                },
+                {
+                    "id": "90382325",
+                    "dotCoordinates": {
+                        "x": 33.300000000000004,
+                        "y": 33.800000000000004
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/mammut-childrens-stool-in-outdoor-yellow-90382325/",
+                    "tagPosition": "bottom-left",
+                    "index": 1,
+                    "imageId": "C624D591-655E-45E4-AE7A97AD67A96749",
+                    "hide": true
+                },
+                {
+                    "id": "30184050",
+                    "dotCoordinates": {
+                        "x": 21,
+                        "y": 67.30000000000001
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/marius-stool-white-30184050/",
+                    "tagPosition": "top-left",
+                    "index": 2,
+                    "imageId": "C624D591-655E-45E4-AE7A97AD67A96749",
+                    "hide": true
+                }
+            ],
+            "index": 0
+        },
+        {
+            "id": "FB512203-AD03-4576-BB0F33072BD01CC4",
+            "url": "https://www.ikea.com/ext/ingkadam/m/65d6f4221f7abf76/original/PH152841-crop001.jpg",
+            "altText": "UNDERVERK kitchen hood is integrated under black-blue cabinets with lit halogen bulbs above a marble effect worktop.",
+            "products": [
+                {
+                    "id": "80508962",
+                    "dotCoordinates": {
+                        "x": 15.9,
+                        "y": 38.6
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/underverk-built-in-extractor-hood-stainless-steel-80508962/",
+                    "tagPosition": "right",
+                    "index": 0,
+                    "imageId": "FB512203-AD03-4576-BB0F33072BD01CC4",
+                    "hide": true
+                },
+                {
+                    "id": "50274257",
+                    "dotCoordinates": {
+                        "x": 27.400000000000002,
+                        "y": 93.4
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ringhult-drawer-front-high-gloss-white-50274257/",
+                    "tagPosition": "top-left",
+                    "index": 1,
+                    "imageId": "FB512203-AD03-4576-BB0F33072BD01CC4",
+                    "hide": true
+                },
+                {
+                    "id": "30301898",
+                    "dotCoordinates": {
+                        "x": 65.2,
+                        "y": 70.6
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/intressant-spice-mill-acacia-30301898/",
+                    "tagPosition": "top-right",
+                    "index": 2,
+                    "imageId": "FB512203-AD03-4576-BB0F33072BD01CC4",
+                    "hide": true
+                },
+                {
+                    "id": "50335623",
+                    "dotCoordinates": {
+                        "x": 63.9,
+                        "y": 88.4
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/ekbacken-worktop-white-marble-effect-laminate-50335623/",
+                    "tagPosition": "top",
+                    "index": 3,
+                    "imageId": "FB512203-AD03-4576-BB0F33072BD01CC4",
+                    "hide": true
+                },
+                {
+                    "id": "40176460",
+                    "dotCoordinates": {
+                        "x": 73.4,
+                        "y": 62.9
+                    },
+                    "href": "https://www.ikea.com/sg/en/p/snudda-lazy-susan-solid-wood-40176460/",
+                    "tagPosition": "left",
+                    "index": 4,
+                    "imageId": "FB512203-AD03-4576-BB0F33072BD01CC4",
+                    "hide": true
+                }
+            ],
+            "index": 1
+        }
+    ]
+}
