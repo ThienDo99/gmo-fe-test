@@ -45,7 +45,7 @@
                         "y": 30.5
                     },
                     "href": "https://www.ikea.com/sg/en/p/kalas-mug-mixed-colours-40378670/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "66954817-0D04-4812-90824A25E6AE7FCE",
                     "hide": true
@@ -69,7 +69,7 @@
                         "y": 67.7
                     },
                     "href": "https://www.ikea.com/sg/en/p/laettsam-baby-bath-white-green-20248444/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 3,
                     "imageId": "66954817-0D04-4812-90824A25E6AE7FCE",
                     "hide": true
@@ -101,7 +101,7 @@
                         "y": 69
                     },
                     "href": "https://www.ikea.com/sg/en/p/variera-pot-lid-organiser-stainless-steel-40164075/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-start",
                     "index": 0,
                     "imageId": "FCD0EC5D-D6DF-4137-AB25D713FE0A6237",
                     "hide": true
@@ -121,7 +121,7 @@
                         "y": 65.4
                     },
                     "href": "https://www.ikea.com/sg/en/p/hemnes-tv-bench-black-brown-light-brown-70452300/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 0,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -145,7 +145,7 @@
                         "y": 7.7
                     },
                     "href": "https://www.ikea.com/sg/en/p/visbaeck-poster-hanger-bamboo-70421766/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-end",
                     "index": 2,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -157,7 +157,7 @@
                         "y": 34.9
                     },
                     "href": "https://www.ikea.com/sg/en/p/hemnes-bookcase-black-brown-light-brown-70452296/",
-                    "tagPosition": "bottom-left",
+                    "tagPosition": "bottom-start",
                     "index": 3,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -169,7 +169,7 @@
                         "y": 84.6
                     },
                     "href": "https://www.ikea.com/sg/en/p/snidad-basket-rattan-00394945/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 4,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -181,7 +181,7 @@
                         "y": 21.2
                     },
                     "href": "https://www.ikea.com/sg/en/p/knoppaeng-frame-with-poster-garden-20465772/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-end",
                     "index": 5,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -237,7 +237,7 @@
                         "y": 18.099999999999998
                     },
                     "href": "https://www.ikea.com/sg/en/p/naevlinge-led-clamp-spotlight-white-10449891/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-end",
                     "index": 3,
                     "imageId": "0D8BF9C1-2464-47AA-A5278713E29327CF",
                     "hide": true
@@ -269,7 +269,7 @@
                         "y": 78.10000000000001
                     },
                     "href": "https://www.ikea.com/sg/en/p/borgeby-coffee-table-birch-veneer-70449402/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-start",
                     "index": 0,
                     "imageId": "E51222D5-0172-4337-B44DB96D668F18F5",
                     "hide": true
@@ -305,7 +305,7 @@
                         "y": 91.4
                     },
                     "href": "https://www.ikea.com/sg/en/p/knardrup-rug-low-pile-pale-pink-00492620/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 3,
                     "imageId": "E51222D5-0172-4337-B44DB96D668F18F5",
                     "hide": true
@@ -361,7 +361,7 @@
                         "y": 20.7
                     },
                     "href": "https://www.ikea.com/sg/en/p/uppvind-floor-lamp-nickel-plated-white-60437824/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "41611D27-144E-4183-B5907D25FFDC5166",
                     "hide": true
@@ -409,7 +409,7 @@
                         "y": 79
                     },
                     "href": "https://www.ikea.com/sg/en/p/landskrona-footstool-djuparp-dark-blue-wood-s69415808/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-start",
                     "index": 5,
                     "imageId": "41611D27-144E-4183-B5907D25FFDC5166",
                     "hide": true
@@ -441,7 +441,7 @@
                         "y": 68.8
                     },
                     "href": "https://www.ikea.com/sg/en/p/sandared-pouffe-grey-90385319/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "3402DA80-2307-4103-80D35CE148FC2F7E",
                     "hide": true
@@ -485,7 +485,7 @@
                         "y": 83.5
                     },
                     "href": "https://www.ikea.com/sg/en/p/paerkla-storage-case-10395384/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 0,
                     "imageId": "18432CD7-5F30-49A4-A74DAFFC022AACA9",
                     "hide": true
@@ -529,7 +529,7 @@
                         "y": 69.89999999999999
                     },
                     "href": "https://www.ikea.com/sg/en/p/svalsta-nest-of-tables-set-of-2-birch-veneer-30280693/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 2,
                     "imageId": "B410D712-5E6F-4E13-919041C85EE05A0F",
                     "hide": true
@@ -549,7 +549,7 @@
                         "y": 30.4
                     },
                     "href": "https://www.ikea.com/sg/en/p/vimle-footstool-with-storage-saxemara-black-blue-s49392600/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-end",
                     "index": 0,
                     "imageId": "5E4DBC02-BEAB-4961-AE8E321C8354C2EB",
                     "hide": true
@@ -561,7 +561,7 @@
                         "y": 90.4
                     },
                     "href": "https://www.ikea.com/sg/en/p/knardrup-rug-low-pile-pale-pink-00492620/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-start",
                     "index": 1,
                     "imageId": "5E4DBC02-BEAB-4961-AE8E321C8354C2EB",
                     "hide": true
@@ -573,7 +573,7 @@
                         "y": 13.600000000000001
                     },
                     "href": "https://www.ikea.com/sg/en/p/borgeby-coffee-table-birch-veneer-70449402/",
-                    "tagPosition": "bottom-left",
+                    "tagPosition": "bottom-start",
                     "index": 2,
                     "imageId": "5E4DBC02-BEAB-4961-AE8E321C8354C2EB",
                     "hide": true
@@ -617,7 +617,7 @@
                         "y": 84
                     },
                     "href": "https://www.ikea.com/sg/en/p/malm-dressing-table-white-40355409/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-start",
                     "index": 2,
                     "imageId": "68DBD022-6B1C-4ECB-BC6A114E4B3716CB",
                     "hide": true
@@ -629,7 +629,7 @@
                         "y": 29.7
                     },
                     "href": "https://www.ikea.com/sg/en/p/regnskur-pendant-lamp-shade-round-white-10437949/",
-                    "tagPosition": "bottom-left",
+                    "tagPosition": "bottom-start",
                     "index": 3,
                     "imageId": "68DBD022-6B1C-4ECB-BC6A114E4B3716CB",
                     "hide": true
@@ -733,7 +733,7 @@
                         "y": 25.7
                     },
                     "href": "https://www.ikea.com/sg/en/p/aepplaryd-2-seat-sofa-djuparp-dark-blue-10504279/",
-                    "tagPosition": "bottom-left",
+                    "tagPosition": "bottom-start",
                     "index": 5,
                     "imageId": "3C266520-A465-4F30-9C8A4542B9E22234",
                     "hide": true
@@ -765,7 +765,7 @@
                         "y": 14.499999999999998
                     },
                     "href": "https://www.ikea.com/sg/en/p/bekvaem-spice-rack-aspen-00487176/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "16C9D869-5E84-4697-89E65332842240F6",
                     "hide": true
@@ -797,7 +797,7 @@
                         "y": 70.6
                     },
                     "href": "https://www.ikea.com/sg/en/p/tingby-side-table-on-castors-white-60295928/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "3AA71E5B-C671-4C4C-A95221BE1414775B",
                     "hide": true
@@ -885,7 +885,7 @@
                         "y": 67.60000000000001
                     },
                     "href": "https://www.ikea.com/sg/en/p/kyrre-stool-birch-80420040/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 0,
                     "imageId": "C536ADB3-AB07-4D7A-8CD2225FC0B95183",
                     "hide": true
@@ -897,7 +897,7 @@
                         "y": 22.400000000000002
                     },
                     "href": "https://www.ikea.com/sg/en/p/tjena-magazine-file-white-90395417/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "C536ADB3-AB07-4D7A-8CD2225FC0B95183",
                     "hide": true
@@ -1041,7 +1041,7 @@
                         "y": 70.3
                     },
                     "href": "https://www.ikea.com/sg/en/p/sundvik-childrens-table-white-90201674/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "8471C8E1-330A-4559-B4948DE8D8F54F0A",
                     "hide": true

@@ -5,6 +5,7 @@ interface IItem {
   url: string;
   altText: string;
   products: {
+    price: number;
     id: string;
     dotCoordinates: {
       x: number;

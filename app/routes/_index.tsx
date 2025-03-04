@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { MetaFunction } from "@remix-run/node";
 import { fetcher } from "utils/helpers";
 import InfiniteScroll from "components/InfiniteScroll";
 import { FETCH_URL, totalPage } from "utils/constants";
 import { IData } from "types/response";
+import Tooltip from "@mui/material/Tooltip";
 
 export const meta: MetaFunction = () => {
   return [
@@ -13,8 +14,9 @@ export const meta: MetaFunction = () => {
 };
 
 export default function Index() {
-  const [data, setData] = React.useState<IData[]>([]);
-  const [currentPage, setCurrentPage] = React.useState(0);
+  const [data, setData] = useState<IData[]>([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [hoveredImage, setHoveredImage] = useState<string | null>(null);
 
   const fetchData = (url: string) => {
     fetcher(url).then((newData) => {
@@ -61,7 +63,8 @@ export default function Index() {
   return (
     <InfiniteScroll hasMore={currentPage < totalPage} onLoadMore={onLoadMore}>
       {data.map(({ video_link, items }, index) => (
-        <div key={index}>
+        <div key={index} style={{ marginBottom: "2rem", position: "relative" }}>
+          {/* Video Section */}
           <video
             ref={(el) => (videoRefs.current[index] = el)}
             width="100%"
@@ -74,19 +77,67 @@ export default function Index() {
             <source src={video_link} type="video/mp4" />
           </video>
 
+          {/* Masonry Layout for Images */}
           <ul
             style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "1rem",
-              alignItems: "center",
-              width: "20%",
+              columnCount: 3,
+              columnGap: "1rem",
               marginTop: "1rem",
             }}
           >
-            {(items || []).map(({ id, url, altText }) => (
-              <li key={id}>
-                <img src={url} alt={altText} />
+            {(items || []).map(({ id, url, altText, products }) => (
+              <li
+                key={id}
+                style={{
+                  breakInside: "avoid",
+                  marginBottom: "1rem",
+                  position: "relative",
+                }}
+                onMouseEnter={() => setHoveredImage(id)}
+                onMouseLeave={() => {
+                  setHoveredImage(null);
+                }}
+              >
+                <img
+                  src={url}
+                  alt={altText}
+                  loading="lazy"
+                  style={{
+                    width: "100%",
+                    borderRadius: "8px",
+                    display: "block",
+                  }}
+                />
+                {/* Product Tags (Only Show When Hovered) */}
+                {hoveredImage === id &&
+                  products?.map(
+                    ({ id, dotCoordinates, price, tagPosition }) => (
+                      <Tooltip
+                        key={id}
+                        title={
+                          <div className="text-black bg-white p-1 m-2">${price}</div>
+                        }
+                        placement={tagPosition}
+                      >
+                        <div
+                          key={id}
+                          style={{
+                            position: "absolute",
+                            top: `${dotCoordinates.y}%`,
+                            left: `${dotCoordinates.x}%`,
+                            transform: "translate(-50%, -50%)",
+                            width: "30px",
+                            height: "30px",
+                            backgroundColor: "blue",
+                            borderRadius: "50%",
+                            opacity: "inherit",
+                            // boxShadow: "0 0 8px rgba(0, 37, 204, 0.8)",
+                            cursor: "pointer",
+                          }}
+                        ></div>
+                      </Tooltip>
+                    )
+                  )}
               </li>
             ))}
           </ul>
