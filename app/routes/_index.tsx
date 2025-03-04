@@ -1,6 +1,10 @@
-import React, { useEffect, useRef } from "react";
+import { Fragment, useEffect, useState } from "react";
 import type { MetaFunction } from "@remix-run/node";
 import { fetcher } from "utils/helpers";
+import { isFibonacci } from "utils/isFibonacci";
+import { UnsplashPhoto } from "~/components/AdvertisementCard";
+import { MasonryLayout } from "~/layouts/MasonryLayout";
+import VideoPlayer from "~/components/VideoPlayer";
 import InfiniteScroll from "components/InfiniteScroll";
 import { FETCH_URL, totalPage } from "utils/constants";
 import { IData } from "types/response";
@@ -12,84 +16,77 @@ export const meta: MetaFunction = () => {
   ];
 };
 
-export default function Index() {
-  const [data, setData] = React.useState<IData[]>([]);
-  const [currentPage, setCurrentPage] = React.useState(0);
+export interface ImageData {
+  id: string;
+  url: string;
+  altText: string;
+}
 
-  const fetchData = (url: string) => {
-    fetcher(url).then((newData) => {
-      setData((prev) => [...prev, newData]);
-    });
+export default function Index() {
+  const [data, setData] = useState<IData[]>([]);
+  const [currentPage, setCurrentPage] = useState(0);
+  const [advertisementData, setAdvertisementData] = useState<UnsplashPhoto[]>(
+    []
+  );
+
+  const mapData = (currentData = []) => {
+    let adIndex = 0;
+    let currentIndex = 0;
+    const finalData: (ImageData | UnsplashPhoto)[] = [];
+    let i = 0;
+
+    while (
+      currentIndex < currentData.length ||
+      adIndex < advertisementData.length
+    ) {
+      if (isFibonacci(i) && adIndex < advertisementData.length) {
+        finalData.push(advertisementData[adIndex]);
+        adIndex++;
+      } else if (currentIndex < currentData.length) {
+        finalData.push(currentData[currentIndex]);
+        currentIndex++;
+      }
+      i++;
+    }
+    return finalData;
   };
 
   useEffect(() => {
-    currentPage && fetchData(FETCH_URL.get(currentPage) as string);
-  }, [currentPage]);
+    fetcher("../data/advertisement.json").then((data) => {
+      setAdvertisementData(data);
+    });
+  }, []);
+
+  useEffect(
+    () => {
+      currentPage &&
+        fetcher(FETCH_URL.get(currentPage) as string).then((newData) => {
+          const mappedData = {
+            video_link: newData.video_link,
+            items: mapData(newData.items),
+          };
+          setData((prev) => [...prev, mappedData] as IData[]);
+        });
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [currentPage]
+  );
 
   const onLoadMore = () => {
     setCurrentPage((prev) => prev + 1);
   };
 
-  // control video play/pause based on visibility
-  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
-  useEffect(() => {
-    const observers: IntersectionObserver[] = [];
-
-    videoRefs.current.forEach((video) => {
-      if (!video) return;
-
-      const observer = new IntersectionObserver(
-        ([entry]) => {
-          if (entry.isIntersecting) {
-            video.play();
-          } else {
-            video.pause();
-          }
-        },
-        { threshold: 0.5, root: null }
-      );
-
-      observer.observe(video);
-      observers.push(observer);
-    });
-
-    return () => {
-      observers.forEach((observer) => observer.disconnect());
-    };
-  }, [data.length]);
-
   return (
     <InfiniteScroll hasMore={currentPage < totalPage} onLoadMore={onLoadMore}>
       {data.map(({ video_link, items }, index) => (
         <div key={index}>
-          <video
-            ref={(el) => (videoRefs.current[index] = el)}
-            width="100%"
-            height="315"
-            autoPlay
-            muted
-            controls
-            loop
-          >
-            <source src={video_link} type="video/mp4" />
-          </video>
+          <VideoPlayer src={video_link} />
 
-          <ul
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "1rem",
-              alignItems: "center",
-              width: "20%",
-              marginTop: "1rem",
-            }}
-          >
-            {(items || []).map(({ id, url, altText }) => (
-              <li key={id}>
-                <img src={url} alt={altText} />
-              </li>
-            ))}
-          </ul>
+          {(items || []).map((item) => (
+            <Fragment key={item.id}>
+              <MasonryLayout combinedItem={item} index={+item.id} />
+            </Fragment>
+          ))}
         </div>
       ))}
     </InfiniteScroll>
