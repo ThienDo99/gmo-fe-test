@@ -1,44 +1,128 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import { Tooltip } from "@mui/material";
+import { useState } from "react";
+import { IProduct } from "types/response";
+import useIsMobile from "~/hooks/useIsMobile";
+
 interface CardImgProps {
   url: string;
   altText: string;
-  isLoading: boolean;
-  onClick: () => void;
   height?: number;
+  products: IProduct[];
+  id: string;
 }
 
 export const CardImg = ({
   url,
   altText,
-  isLoading,
-  onClick,
   height = 150,
+  products,
+  id,
 }: CardImgProps) => {
+  const [hoveredImage, setHoveredImage] = useState<string | null>(null);
+  const [clickedTags, setClickedTags] = useState<string[]>([]);
+  const [hoveredTag, setHoveredTag] = useState<string | null>(null);
+  const isMobile = useIsMobile();
+  const [isImageClicked, setIsImageClicked] = useState(false); // Track mobile click
+
+  const toggleClick = (tagId: string) => {
+    setClickedTags((prev) =>
+      prev.includes(tagId)
+        ? prev.filter((id) => id !== tagId)
+        : [...prev, tagId]
+    );
+  };
+
+  const handleImageClick = () => {
+    if (isMobile) {
+      setIsImageClicked((prev) => !prev);
+      setClickedTags([]);
+      setHoveredImage((prev) => (prev ? null : id));
+    }
+  };
+
   return (
     <div
-      className={`relative break-inside-avoid p-4 rounded-lg shadow-lg transition-all duration-300 ${
-        isLoading
-          ? "bg-white border border-gray-300"
-          : "text-white cursor-pointer hover:opacity-80"
-      }`}
+      className="relative p-0 rounded-lg shadow-lg transition-all duration-300 text-white cursor-pointer inline-block w-full"
       role="button"
       tabIndex={0}
-      onClick={onClick}
-      onKeyDown={() => {}}
       style={{
         gridRowEnd: `span ${Math.ceil(height / 10)}`,
       }}
+      onClick={isMobile ? handleImageClick : undefined}
+      onMouseEnter={!isMobile ? () => setHoveredImage(id) : undefined}
+      onMouseLeave={
+        !isMobile
+          ? () => {
+              setHoveredImage(null);
+              setClickedTags([]);
+            }
+          : undefined
+      }
     >
-      {isLoading ? (
-        <div className="flex items-center justify-center h-full">
-          <div className="w-6 h-6 border-1 border-t-transparent rounded-full animate-spin"></div>
-        </div>
-      ) : (
-        <img
-          src={url}
-          alt={altText}
-          className="w-full h-full object-cover rounded-lg"
-        />
-      )}
+      <img
+        src={url}
+        alt={altText}
+        className="w-full h-full object-cover rounded-lg absolute"
+      />
+
+      {(hoveredImage === id || isImageClicked) &&
+        products?.map(
+          ({ id: productId, dotCoordinates, price, tagPosition }) => {
+            const isTooltipOpen =
+              clickedTags.includes(productId) || hoveredTag === productId;
+
+            return (
+              <Tooltip
+                key={productId}
+                title={
+                  <div className="text-black bg-white p-1 m-2">${price}</div>
+                }
+                arrow
+                placement={tagPosition}
+                disableInteractive={false}
+                open={isTooltipOpen}
+              >
+                <div
+                  style={{
+                    position: "relative",
+                    top: `${dotCoordinates.y}%`,
+                    left: `${dotCoordinates.x}%`,
+                    width: "30px",
+                    height: "30px",
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    backgroundColor: "rgba(51, 48, 48, 0.2)",
+                    border: isMobile ? "2px solid white" : "3px solid white",
+                    borderRadius: "50%",
+                  }}
+                  role="button"
+                  tabIndex={0}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    toggleClick(productId);
+                  }}
+                  onMouseEnter={
+                    !isMobile ? () => setHoveredTag(productId) : undefined
+                  }
+                  onMouseLeave={
+                    !isMobile ? () => setHoveredTag(null) : undefined
+                  }
+                >
+                  <div
+                    style={{
+                      width: isMobile ? "20px" : "18px",
+                      height: isMobile ? "20px" : "18px",
+                      backgroundColor: "white",
+                      borderRadius: "50%",
+                    }}
+                  ></div>
+                </div>
+              </Tooltip>
+            );
+          }
+        )}
     </div>
   );
 };
