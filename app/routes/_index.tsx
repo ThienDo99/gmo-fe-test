@@ -81,12 +81,16 @@ export default function Index() {
       {data.map(({ video_link, items }, index) => (
         <div key={index}>
           <VideoPlayer src={video_link} />
-
-          {(items || []).map((item) => (
-            <Fragment key={item.id}>
-              <MasonryLayout combinedItem={item} index={+item.id} />
-            </Fragment>
-          ))}
+          <div
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4"
+            style={{ gridAutoRows: "10px" }}
+          >
+            {(items || []).map((item, idx) => (
+              <Fragment key={item.id}>
+                <MasonryLayout combinedItem={item} index={idx} />
+              </Fragment>
+            ))}
+          </div>
         </div>
       ))}
     </InfiniteScroll>
