@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 import type { MetaFunction } from "@remix-run/node";
 import { fetcher } from "utils/helpers";
 import { isFibonacci } from "utils/isFibonacci";
@@ -23,6 +23,7 @@ export interface ImageData {
 }
 
 export default function Index() {
+  const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [data, setData] = useState<IData[]>([]);
   const [currentPage, setCurrentPage] = useState(0);
   const [advertisementData, setAdvertisementData] = useState<UnsplashPhoto[]>(
@@ -50,6 +51,32 @@ export default function Index() {
     }
     return finalData;
   };
+
+  useEffect(() => {
+    const observers: IntersectionObserver[] = [];
+
+    videoRefs.current.forEach((video) => {
+      if (!video) return;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            video.play();
+          } else {
+            video.pause();
+          }
+        },
+        { threshold: 0.5, root: null }
+      );
+
+      observer.observe(video);
+      observers.push(observer);
+    });
+
+    return () => {
+      observers.forEach((observer) => observer.disconnect());
+    };
+  }, [data.length]);
 
   useEffect(() => {
     fetcher("../data/advertisement.json").then((data) => {
@@ -80,7 +107,10 @@ export default function Index() {
     <InfiniteScroll hasMore={currentPage < totalPage} onLoadMore={onLoadMore}>
       {data.map(({ video_link, items }, index) => (
         <div key={index}>
-          <VideoPlayer src={video_link} />
+          <VideoPlayer
+            videoRef={(el) => (videoRefs.current[index] = el)}
+            src={video_link}
+          />
           <div
             className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4"
             style={{ gridAutoRows: "10px" }}
