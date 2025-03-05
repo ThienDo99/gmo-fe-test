@@ -1,16 +1,17 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import type { MetaFunction } from "@remix-run/node";
-import { fetcher } from "utils/helpers";
-import { isFibonacci } from "utils/isFibonacci";
+import { isFibonacci } from "~/utils/isFibonacci";
 import { UnsplashPhoto } from "~/components/AdvertisementCard";
 import { MasonryLayout } from "~/layouts/MasonryLayout";
 import VideoPlayer from "~/components/VideoPlayer";
 import InfiniteScroll from "~/components/InfiniteScroll";
-import { DOMAIN_URL, FETCH_URL, totalPage } from "utils/constants";
-import { IData } from "types/response";
+import { DOMAIN_URL, FETCH_URL, totalPage } from "~/utils/constants";
+import { IData } from "~/types/response";
 import { useLoaderData } from "@remix-run/react";
 import useIsMobile from "~/hooks/useIsMobile";
 import Loader from "~/components/Loader";
+import PullToRefresh from "~/components/PullToRefresh";
+import { fetcher } from "~/utils/helpers";
 
 export const meta: MetaFunction = () => {
   return [
@@ -28,15 +29,6 @@ export interface ImageData {
 export const loader = async () => {
   const advertisements = await fetcher(`${DOMAIN_URL}/data/advertisement.json`);
   return { advertisements };
-};
-const PullToRefresh = () => {
-  return (
-    <div
-      className={`flex items-center justify-center w-auto bg-slate-100 rounded-lg shadow-lg m-2 p-4`}
-    >
-      <div className="text-black">↓ Pull to refresh</div>
-    </div>
-  );
 };
 
 export default function Index() {

@@ -3,7 +3,7 @@ import {
   AdvertisementCard,
   UnsplashPhoto,
 } from "../components/AdvertisementCard";
-import { IProduct } from "types/response";
+import { IProduct } from "~/types/response";
 
 export interface ImageData {
   id: string;

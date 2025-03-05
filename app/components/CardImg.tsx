@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Tooltip } from "@mui/material";
 import { useState } from "react";
-import { IProduct } from "types/response";
+import { IProduct } from "~/types/response";
 import useIsMobile from "~/hooks/useIsMobile";
 
 interface CardImgProps {
