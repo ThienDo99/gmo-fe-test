@@ -5,7 +5,7 @@ import { isFibonacci } from "utils/isFibonacci";
 import { UnsplashPhoto } from "~/components/AdvertisementCard";
 import { MasonryLayout } from "~/layouts/MasonryLayout";
 import VideoPlayer from "~/components/VideoPlayer";
-import InfiniteScroll from "components/InfiniteScroll";
+import InfiniteScroll from "~/components/InfiniteScroll";
 import { FETCH_URL, totalPage } from "utils/constants";
 import { IData } from "types/response";
 
