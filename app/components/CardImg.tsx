@@ -3,6 +3,7 @@ import { Tooltip } from "@mui/material";
 import { useState } from "react";
 import { IProduct } from "types/response";
 import useIsMobile from "~/hooks/useIsMobile";
+import * as styles from "app/styles/CardImg.css";
 
 interface CardImgProps {
   url: string;
@@ -23,7 +24,7 @@ export const CardImg = ({
   const [clickedTags, setClickedTags] = useState<string[]>([]);
   const [hoveredTag, setHoveredTag] = useState<string | null>(null);
   const isMobile = useIsMobile();
-  const [isImageClicked, setIsImageClicked] = useState(false); // Track mobile click
+  const [isImageClicked, setIsImageClicked] = useState(false);
 
   const toggleClick = (tagId: string) => {
     setClickedTags((prev) =>
@@ -43,12 +44,10 @@ export const CardImg = ({
 
   return (
     <div
-      className="relative p-0 rounded-lg shadow-lg transition-all duration-300 text-white cursor-pointer inline-block w-full"
+      className={styles.cardContainer}
       role="button"
       tabIndex={0}
-      style={{
-        gridRowEnd: `span ${Math.ceil(height / 10)}`,
-      }}
+      style={{ gridRowEnd: `span ${Math.ceil(height / 10)}` }}
       onClick={isMobile ? handleImageClick : undefined}
       onMouseEnter={!isMobile ? () => setHoveredImage(id) : undefined}
       onMouseLeave={
@@ -60,42 +59,27 @@ export const CardImg = ({
           : undefined
       }
     >
-      <img
-        src={url}
-        alt={altText}
-        className="w-full h-full object-cover rounded-lg absolute"
-      />
+      <img src={url} alt={altText} className={styles.image} />
 
       {(hoveredImage === id || isImageClicked) &&
         products?.map(
           ({ id: productId, dotCoordinates, price, tagPosition }) => {
             const isTooltipOpen =
               clickedTags.includes(productId) || hoveredTag === productId;
-
             return (
               <Tooltip
                 key={productId}
-                title={
-                  <div className="text-black bg-white p-1 m-2">${price}</div>
-                }
+                title={<div className={styles.tooltipContent}>${price}</div>}
                 arrow
                 placement={tagPosition}
                 disableInteractive={false}
                 open={isTooltipOpen}
               >
                 <div
+                  className={styles.tagDot}
                   style={{
-                    position: "relative",
                     top: `${dotCoordinates.y}%`,
                     left: `${dotCoordinates.x}%`,
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    backgroundColor: "rgba(51, 48, 48, 0.2)",
-                    border: isMobile ? "2px solid white" : "3px solid white",
-                    borderRadius: "50%",
                   }}
                   role="button"
                   tabIndex={0}
@@ -110,14 +94,7 @@ export const CardImg = ({
                     !isMobile ? () => setHoveredTag(null) : undefined
                   }
                 >
-                  <div
-                    style={{
-                      width: isMobile ? "20px" : "18px",
-                      height: isMobile ? "20px" : "18px",
-                      backgroundColor: "white",
-                      borderRadius: "50%",
-                    }}
-                  ></div>
+                  <div className={styles.tagInner}></div>
                 </div>
               </Tooltip>
             );

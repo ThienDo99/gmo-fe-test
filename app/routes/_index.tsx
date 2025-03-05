@@ -10,7 +10,7 @@ import { FETCH_URL, totalPage } from "utils/constants";
 import { IData } from "types/response";
 import useIsMobile from "~/hooks/useIsMobile";
 import Loader from "~/components/Loader";
-
+import * as styles from "../styles/_Index.css";
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -26,9 +26,7 @@ export interface ImageData {
 
 const PullToRefresh = () => {
   return (
-    <div
-      className={`flex items-center justify-center w-auto bg-slate-100 rounded-lg shadow-lg m-2 p-4`}
-    >
+    <div className={styles.pullToRefresh}>
       <div className="text-black">↓ Pull to refresh</div>
     </div>
   );
@@ -157,7 +155,7 @@ export default function Index() {
             .finally(() => {
               setIsLoadingPrev(false);
             });
-        }, 0);
+        }, 3000);
       } else {
         setIsPulling(false);
       }
@@ -185,10 +183,7 @@ export default function Index() {
               videoRef={(el) => (videoRefs.current[index] = el)}
               src={video_link}
             />
-            <div
-              className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 sm:p-4"
-              style={{ gridAutoRows: "10px" }}
-            >
+            <div className={styles.gridContainer}>
               {(items || []).map((item, idx) => (
                 <Fragment key={item.id}>
                   <MasonryLayout combinedItem={item} index={idx} />

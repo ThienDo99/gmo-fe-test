@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import { ComponentProps } from "react";
+import * as styles from "../styles/VideoPlayer.css";
 
 export interface IVideoPlayerProps {
   src: string;
@@ -8,11 +9,11 @@ export interface IVideoPlayerProps {
 
 const VideoPlayer = ({ src, videoRef }: IVideoPlayerProps) => {
   return (
-    <div className="w-full mx-auto p-2">
-      <div className="relative w-full pt-[56.25%]">
+    <div className={styles.container}>
+      <div className={styles.videoWrapper}>
         <video
           ref={videoRef}
-          className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+          className={styles.video}
           src={src}
           autoPlay
           muted
