@@ -6,8 +6,9 @@ import { UnsplashPhoto } from "~/components/AdvertisementCard";
 import { MasonryLayout } from "~/layouts/MasonryLayout";
 import VideoPlayer from "~/components/VideoPlayer";
 import InfiniteScroll from "~/components/InfiniteScroll";
-import { FETCH_URL, totalPage } from "utils/constants";
+import { DOMAIN_URL, FETCH_URL, totalPage } from "utils/constants";
 import { IData } from "types/response";
+import { useLoaderData } from "@remix-run/react";
 
 export const meta: MetaFunction = () => {
   return [
@@ -22,13 +23,16 @@ export interface ImageData {
   altText: string;
 }
 
+export const loader = async () => {
+  const advertisements = await fetcher(`${DOMAIN_URL}/data/advertisement.json`);
+  return { advertisements };
+};
+
 export default function Index() {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [data, setData] = useState<IData[]>([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const [advertisementData, setAdvertisementData] = useState<UnsplashPhoto[]>(
-    []
-  );
+  const { advertisements } = useLoaderData<typeof loader>();
 
   const mapData = (currentData = []) => {
     let adIndex = 0;
@@ -38,10 +42,10 @@ export default function Index() {
 
     while (
       currentIndex < currentData.length ||
-      adIndex < advertisementData.length
+      adIndex < advertisements.length
     ) {
-      if (isFibonacci(i) && adIndex < advertisementData.length) {
-        finalData.push(advertisementData[adIndex]);
+      if (isFibonacci(i) && adIndex < advertisements.length) {
+        finalData.push(advertisements[adIndex]);
         adIndex++;
       } else if (currentIndex < currentData.length) {
         finalData.push(currentData[currentIndex]);
@@ -77,12 +81,6 @@ export default function Index() {
       observers.forEach((observer) => observer.disconnect());
     };
   }, [data.length]);
-
-  useEffect(() => {
-    fetcher("../data/advertisement.json").then((data) => {
-      setAdvertisementData(data);
-    });
-  }, []);
 
   useEffect(
     () => {

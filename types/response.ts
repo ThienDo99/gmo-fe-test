@@ -1,5 +1,3 @@
-import { TooltipProps } from "@mui/material";
-
 interface IItem {
   id: string;
   url: string;
@@ -10,7 +8,7 @@ interface IItem {
       x: number;
       y: number;
     };
-    tagPosition: TooltipProps["placement"];
+    tagPosition: string;
   }[];
 }
 

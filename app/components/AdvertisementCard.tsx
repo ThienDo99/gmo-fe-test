@@ -85,13 +85,13 @@ export interface UnsplashPhoto {
   blur_hash: string;
   description: string | null;
   alt_description: string;
-  breadcrumbs: any[];
+  breadcrumbs: [];
   urls: Urls;
   links: Links;
   likes: number;
   liked_by_user: boolean;
-  current_user_collections: any[];
-  sponsorship: any | null;
+  current_user_collections: [];
+  sponsorship: null;
   topic_submissions: TopicSubmissions;
   asset_type: string;
   user: User;
