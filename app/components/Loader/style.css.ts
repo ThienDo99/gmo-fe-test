@@ -6,8 +6,8 @@ const rotate = keyframes({
 });
 
 export const loader = style({
-  width: "48px",
-  height: "48px",
+  width: "35px",
+  height: "35px",
   border: "5px solid black",
   borderBottomColor: "transparent",
   borderRadius: "50%",
