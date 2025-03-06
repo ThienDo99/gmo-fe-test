@@ -1,18 +1,16 @@
 import { Fragment, useEffect, useRef, useState } from "react";
 import type { MetaFunction } from "@remix-run/node";
-import { isFibonacci } from "~/utils/isFibonacci";
 import { UnsplashPhoto } from "~/components/AdvertisementCard";
 import { MasonryLayout } from "~/layouts/MasonryLayout";
 import VideoPlayer from "~/components/VideoPlayer";
 import InfiniteScroll from "~/components/InfiniteScroll";
-import { DOMAIN_URL, FETCH_URL, totalPage } from "~/utils/constants";
-import { IData } from "~/types/response";
-import { useLoaderData } from "@remix-run/react";
 import useIsMobile from "~/hooks/useIsMobile";
 import Loader from "~/components/Loader";
-import PullToRefresh from "~/components/PullToRefresh";
+import * as styles from "../styles/_Index.css";
+import { isFibonacci } from "~/utils/isFibonacci";
 import { fetcher } from "~/utils/helpers";
-
+import { FETCH_URL, totalPage } from "~/utils/constants";
+import { IData } from "~/types/response";
 export const meta: MetaFunction = () => {
   return [
     { title: "New Remix App" },
@@ -26,16 +24,21 @@ export interface ImageData {
   altText: string;
 }
 
-export const loader = async () => {
-  const advertisements = await fetcher(`${DOMAIN_URL}/data/advertisement.json`);
-  return { advertisements };
+const PullToRefresh = () => {
+  return (
+    <div className={styles.pullToRefresh}>
+      <div className="text-black">↓ Pull to refresh</div>
+    </div>
+  );
 };
 
 export default function Index() {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [data, setData] = useState<IData[]>([]);
   const [currentPage, setCurrentPage] = useState(0);
-  const { advertisements } = useLoaderData<typeof loader>();
+  const [advertisementData, setAdvertisementData] = useState<UnsplashPhoto[]>(
+    []
+  );
   const isMobile = useIsMobile();
   const touchStartY = useRef(0);
   const touchEndY = useRef(0);
@@ -50,10 +53,10 @@ export default function Index() {
 
     while (
       currentIndex < currentData.length ||
-      adIndex < advertisements.length
+      adIndex < advertisementData.length
     ) {
-      if (isFibonacci(i) && adIndex < advertisements.length) {
-        finalData.push(advertisements[adIndex]);
+      if (isFibonacci(i) && adIndex < advertisementData.length) {
+        finalData.push(advertisementData[adIndex]);
         adIndex++;
       } else if (currentIndex < currentData.length) {
         finalData.push(currentData[currentIndex]);
@@ -90,81 +93,80 @@ export default function Index() {
     };
   }, [data.length]);
 
-  useEffect(
-    () => {
-      currentPage &&
-        fetcher(FETCH_URL.get(currentPage) as string).then((newData) => {
-          const mappedData = {
-            video_link: newData.video_link,
-            items: mapData(newData.items),
-          };
-          setData((prev) => [...prev, mappedData] as IData[]);
-        });
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [currentPage]
-  );
+  useEffect(() => {
+    fetcher("../data/advertisement.json").then((data) => {
+      setAdvertisementData(data);
+      setIsLoadingPrev(false);
+    });
+  }, []);
+
+  useEffect(() => {
+    currentPage &&
+      fetcher(FETCH_URL.get(currentPage) as string).then((newData) => {
+        const mappedData = {
+          video_link: newData.video_link,
+          items: mapData(newData.items),
+        };
+        setData((prev) => [...prev, mappedData] as IData[]);
+      });
+  }, [currentPage]);
 
   const onLoadMore = () => {
     setCurrentPage((prev) => prev + 1);
   };
 
-  useEffect(
-    () => {
-      if (!isMobile) return;
+  useEffect(() => {
+    if (!isMobile) return;
 
-      const handleTouchStart = (e: TouchEvent) => {
-        touchStartY.current = e.touches[0].clientY;
+    const handleTouchStart = (e: TouchEvent) => {
+      touchStartY.current = e.touches[0].clientY;
+      setIsPulling(false);
+    };
+
+    const handleTouchMove = (e: TouchEvent) => {
+      const distance = e.touches[0].clientY - touchStartY.current;
+
+      if (distance > 20 && window.scrollY === 0) {
+        setIsPulling(true);
+      }
+    };
+
+    const handleTouchEnd = (e: TouchEvent) => {
+      touchEndY.current = e.changedTouches[0].clientY;
+      const distance = touchEndY.current - touchStartY.current;
+
+      if (distance > 50 && window.scrollY === 0 && !isLoadingPrev) {
+        setIsLoadingPrev(true);
         setIsPulling(false);
-      };
 
-      const handleTouchMove = (e: TouchEvent) => {
-        const distance = e.touches[0].clientY - touchStartY.current;
+        setTimeout(() => {
+          fetcher("../data/next.json")
+            .then((res) => {
+              const mappedData = {
+                video_link: res.video_link,
+                items: mapData(res.items),
+              };
+              setData((prev) => [mappedData, ...prev] as IData[]);
+            })
+            .finally(() => {
+              setIsLoadingPrev(false);
+            });
+        }, 3000);
+      } else {
+        setIsPulling(false);
+      }
+    };
 
-        if (distance > 20 && window.scrollY === 0) {
-          setIsPulling(true);
-        }
-      };
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchmove", handleTouchMove);
+    document.addEventListener("touchend", handleTouchEnd);
 
-      const handleTouchEnd = (e: TouchEvent) => {
-        touchEndY.current = e.changedTouches[0].clientY;
-        const distance = touchEndY.current - touchStartY.current;
-
-        if (distance > 50 && window.scrollY === 0 && !isLoadingPrev) {
-          setIsLoadingPrev(true);
-          setIsPulling(false);
-
-          setTimeout(() => {
-            fetcher("../data/next.json")
-              .then((res) => {
-                const mappedData = {
-                  video_link: res.video_link,
-                  items: mapData(res.items),
-                };
-                setData((prev) => [mappedData, ...prev] as IData[]);
-              })
-              .finally(() => {
-                setIsLoadingPrev(false);
-              });
-          }, 0);
-        } else {
-          setIsPulling(false);
-        }
-      };
-
-      document.addEventListener("touchstart", handleTouchStart);
-      document.addEventListener("touchmove", handleTouchMove);
-      document.addEventListener("touchend", handleTouchEnd);
-
-      return () => {
-        document.removeEventListener("touchstart", handleTouchStart);
-        document.removeEventListener("touchmove", handleTouchMove);
-        document.removeEventListener("touchend", handleTouchEnd);
-      };
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isMobile, isLoadingPrev]
-  );
+    return () => {
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
+      document.removeEventListener("touchend", handleTouchEnd);
+    };
+  }, [isMobile, isLoadingPrev]);
 
   return (
     <>
@@ -177,10 +179,7 @@ export default function Index() {
               videoRef={(el) => (videoRefs.current[index] = el)}
               src={video_link}
             />
-            <div
-              className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 sm:p-4"
-              style={{ gridAutoRows: "10px" }}
-            >
+            <div className={styles.gridContainer}>
               {(items || []).map((item, idx) => (
                 <Fragment key={item.id}>
                   <MasonryLayout combinedItem={item} index={idx} />

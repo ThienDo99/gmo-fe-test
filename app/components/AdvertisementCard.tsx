@@ -1,3 +1,6 @@
+import * as styles from "../styles/AdvertisementCard.css";
+import { LazyImage } from "./LazyImage";
+
 interface AlternativeSlugs {
   en: string;
   es: string;
@@ -109,10 +112,8 @@ export const AdvertisementCard = ({
 }: Partial<UnsplashPhoto>) => {
   return (
     <div
-      className={`relative break-inside-avoid p-4 rounded-lg shadow-lg transition-all duration-300 ${
-        isLoading
-          ? "bg-white border border-gray-300"
-          : "text-white cursor-pointer hover:opacity-80"
+      className={`${styles.card} ${
+        isLoading ? styles.loadingCard : styles.loadedCard
       }`}
       role="button"
       tabIndex={0}
@@ -122,22 +123,12 @@ export const AdvertisementCard = ({
         gridRowEnd: `span ${Math.ceil(height / 10)}`,
       }}
     >
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 text-sm font-semibold rounded">
-        {slug}
-      </div>
-      {isLoading ? (
-        <div className="flex items-center justify-center h-full">
-          <div className="w-6 h-6 border-1 border-t-transparent rounded-full animate-spin"></div>
-        </div>
-      ) : (
-        <>
-          <img
-            src={urls?.thumb}
-            alt={alt_description}
-            className="w-full h-full object-cover rounded-lg"
-          />
-        </>
-      )}
+      <div className={styles.slugLabel}>{slug}</div>
+      <LazyImage
+        src={urls?.regular || ""}
+        alt={alt_description || ""}
+        className={styles.image}
+      />
     </div>
   );
 };
