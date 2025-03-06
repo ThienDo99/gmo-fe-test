@@ -13,10 +13,38 @@ export const cardImgContainer = style({
   aspectRatio: "3 / 4",
 });
 
-export const imgStyle = style({
+export const tagInner = style({
+  width: "18px",
+  height: "18px",
+  backgroundColor: "white",
+  borderRadius: "50%",
+});
+
+export const tooltipContent = style({
+  backgroundColor: "white",
+  color: "black",
+  padding: "4px 8px",
+  margin: "2px",
+  borderRadius: "4px",
+});
+
+export const tagDot = style({
+  position: "absolute",
+  transform: "translate(-50%, -50%)",
+  width: "30px",
+  height: "30px",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  backgroundColor: "rgba(51, 48, 48, 0.2)",
+  border: "3px solid white",
+  borderRadius: "50%",
+});
+
+export const imageStyle = style({
   width: "100%",
   height: "100%",
   objectFit: "cover",
-  borderRadius: "0.5rem",
   position: "absolute",
+  borderRadius: "8px",
 });

@@ -3,7 +3,14 @@ import { Tooltip } from "@mui/material";
 import { useState } from "react";
 import useIsMobile from "../../hooks/useIsMobile";
 import { IProduct } from "../../types/response";
-import { cardImgContainer, imgStyle } from "./style.css";
+import {
+  cardImgContainer,
+  imageStyle,
+  tagDot,
+  tagInner,
+  tooltipContent,
+} from "./style.css";
+import { LazyImage } from "../LazyImage";
 
 interface CardImgProps {
   url: string;
@@ -18,7 +25,7 @@ export const Index = ({ url, altText, products, id }: CardImgProps) => {
   const [clickedTags, setClickedTags] = useState<string[]>([]);
   const [hoveredTag, setHoveredTag] = useState<string | null>(null);
   const isMobile = useIsMobile();
-  const [isImageClicked, setIsImageClicked] = useState(false); // Track mobile click
+  const [isImageClicked, setIsImageClicked] = useState(false);
 
   const toggleClick = (tagId: string) => {
     setClickedTags((prev) =>
@@ -52,65 +59,48 @@ export const Index = ({ url, altText, products, id }: CardImgProps) => {
           : undefined
       }
     >
-      <img src={url} alt={altText} className={imgStyle} />
-
-      {(hoveredImage === id || isImageClicked) &&
-        products?.map(
-          ({ id: productId, dotCoordinates, price, tagPosition }) => {
-            const isTooltipOpen =
-              clickedTags.includes(productId) || hoveredTag === productId;
-
-            return (
-              <Tooltip
-                key={productId}
-                title={
-                  <div className="text-black bg-white p-1 m-2">${price}</div>
-                }
-                arrow
-                placement={tagPosition}
-                disableInteractive={false}
-                open={isTooltipOpen}
-              >
-                <div
-                  style={{
-                    position: "absolute",
-                    top: `${dotCoordinates.y}%`,
-                    left: `${dotCoordinates.x}%`,
-                    width: "30px",
-                    height: "30px",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    backgroundColor: "rgba(51, 48, 48, 0.2)",
-                    border: isMobile ? "2px solid white" : "3px solid white",
-                    borderRadius: "50%",
-                  }}
-                  role="button"
-                  tabIndex={0}
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    toggleClick(productId);
-                  }}
-                  onMouseEnter={
-                    !isMobile ? () => setHoveredTag(productId) : undefined
-                  }
-                  onMouseLeave={
-                    !isMobile ? () => setHoveredTag(null) : undefined
-                  }
+      <>
+        <LazyImage src={url} alt={altText} className={imageStyle} />
+        {(hoveredImage === id || isImageClicked) &&
+          products?.map(
+            ({ id: productId, dotCoordinates, price, tagPosition }) => {
+              const isTooltipOpen =
+                clickedTags.includes(productId) || hoveredTag === productId;
+              return (
+                <Tooltip
+                  key={productId}
+                  title={<div className={tooltipContent}>${price}</div>}
+                  arrow
+                  placement={tagPosition}
+                  disableInteractive={false}
+                  open={isTooltipOpen}
                 >
                   <div
+                    className={tagDot}
                     style={{
-                      width: isMobile ? "20px" : "18px",
-                      height: isMobile ? "20px" : "18px",
-                      backgroundColor: "white",
-                      borderRadius: "50%",
+                      top: `${dotCoordinates.y}%`,
+                      left: `${dotCoordinates.x}%`,
                     }}
-                  ></div>
-                </div>
-              </Tooltip>
-            );
-          }
-        )}
+                    role="button"
+                    tabIndex={0}
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      toggleClick(productId);
+                    }}
+                    onMouseEnter={
+                      !isMobile ? () => setHoveredTag(productId) : undefined
+                    }
+                    onMouseLeave={
+                      !isMobile ? () => setHoveredTag(null) : undefined
+                    }
+                  >
+                    <div className={tagInner}></div>
+                  </div>
+                </Tooltip>
+              );
+            }
+          )}
+      </>
     </div>
   );
 };

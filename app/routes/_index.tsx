@@ -1,9 +1,8 @@
 import { useEffect, useRef, useState } from "react";
 import type { MetaFunction } from "@remix-run/node";
 import { isFibonacci } from "~/utils/isFibonacci";
-import { UnsplashPhoto } from "~/components/AdvertisementCard";
 import { MasonryLayout } from "~/layouts/MasonryLayout";
-import VideoPlayer from "~/components/VideoPlayer";
+import { Index as VideoPlayer } from "~/components/VideoPlayer";
 import InfiniteScroll from "~/components/InfiniteScroll";
 import { DOMAIN_URL, FETCH_URL, totalItem } from "~/utils/constants";
 import { IData } from "~/types/response";
@@ -11,6 +10,7 @@ import { useLoaderData } from "@remix-run/react";
 import useIsMobile from "~/hooks/useIsMobile";
 import PullToRefresh from "~/components/PullToRefresh";
 import { fetcher } from "~/utils/helpers";
+import { UnsplashPhoto } from "~/components/AdvertisementCard";
 
 export const meta: MetaFunction = () => {
   return [

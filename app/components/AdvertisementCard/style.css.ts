@@ -14,19 +14,6 @@ export const centerItemStyle = style({
   height: "100%",
 });
 
-export const slugContainer = style({
-  position: "absolute",
-  top: "1rem",
-  left: "50%",
-  transform: "translateX(-50%)",
-  backgroundColor: "rgba(0, 0, 0, 0.5)",
-  color: "white",
-  padding: "0.25rem 0.75rem",
-  fontSize: "0.875rem",
-  fontWeight: 600,
-  borderRadius: "0.25rem",
-});
-
 export const cardBase = style({
   position: "relative",
   breakInside: "avoid",
@@ -55,4 +42,17 @@ export const cardStyle = styleVariants({
       },
     },
   ],
+});
+
+export const slugLabel = style({
+  position: "absolute",
+  top: "1rem",
+  left: "50%",
+  transform: "translateX(-50%)",
+  backgroundColor: "rgba(0, 0, 0, 0.5)",
+  color: "white",
+  padding: "4px 12px",
+  fontSize: "0.875rem",
+  fontWeight: "600",
+  borderRadius: "4px",
 });

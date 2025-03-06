@@ -1,10 +1,5 @@
-import {
-  cardStyle,
-  centerItemStyle,
-  imageStyle,
-  slugContainer,
-} from "./style.css";
-import Loader from "../Loader";
+import { LazyImage } from "../LazyImage";
+import { cardStyle, imageStyle, slugLabel } from "./style.css";
 
 interface AlternativeSlugs {
   en: string;
@@ -122,16 +117,12 @@ export const Index = ({
       onClick={onClick}
       onKeyDown={() => {}}
     >
-      <div className={slugContainer}>{slug}</div>
-      {isLoading ? (
-        <div className={centerItemStyle}>
-          <Loader />
-        </div>
-      ) : (
-        <>
-          <img src={urls?.thumb} alt={alt_description} className={imageStyle} />
-        </>
-      )}
+      <div className={slugLabel}>{slug}</div>
+      <LazyImage
+        src={urls?.regular || ""}
+        alt={alt_description || ""}
+        className={imageStyle}
+      />
     </div>
   );
 };

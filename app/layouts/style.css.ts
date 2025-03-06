@@ -1,4 +1,4 @@
-import { style } from "@vanilla-extract/css";
+import { globalStyle, style } from "@vanilla-extract/css";
 
 export const gridContainer = style({
   display: "grid",
@@ -12,15 +12,6 @@ export const gridContainer = style({
       gridTemplateColumns: "repeat(4, minmax(0, 1fr))",
     },
   },
-  selectors: {
-    "& > :nth-child(1) > div": {
-      aspectRatio: "3 / 5",
-    },
-
-    "& > :nth-child(3) > div": {
-      aspectRatio: "3 / 5",
-    },
-  },
 });
 
 export const gridItem = style({
@@ -31,4 +22,12 @@ export const gridItem = style({
       gridRow: "span 3",
     },
   },
+});
+
+globalStyle(`${gridContainer} > :nth-child(1) > div`, {
+  aspectRatio: "3 / 5",
+});
+
+globalStyle(`${gridContainer} > :nth-child(3) > div`, {
+  aspectRatio: "3 / 5",
 });
