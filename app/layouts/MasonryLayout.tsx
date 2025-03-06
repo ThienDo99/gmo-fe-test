@@ -5,6 +5,7 @@ import {
 import { Index as CardImg } from "../components/CardImg";
 
 import { IProduct } from "~/types/response";
+import { gridContainer, gridItem } from "./style.css";
 
 export interface ImageData {
   id: string;
@@ -14,30 +15,32 @@ export interface ImageData {
 }
 
 export const MasonryLayout = ({
-  combinedItem,
-  index,
+  combinedItems,
 }: {
-  combinedItem: ImageData | UnsplashPhoto;
-  index: number;
+  combinedItems: ImageData[] | UnsplashPhoto[];
 }) => {
-  const heights = [100, 400, 200, 250, 300, 350, 400, 450, 500];
-
-  return "slug" in combinedItem ? (
-    <AdvertisementCard
-      slug={combinedItem.slug}
-      description={combinedItem.description}
-      urls={combinedItem.urls}
-      alt_description={combinedItem.alt_description}
-      height={heights[index]}
-    />
-  ) : (
-    <CardImg
-      key={combinedItem.id}
-      url={combinedItem.url}
-      altText={combinedItem.altText}
-      id={combinedItem.id}
-      products={combinedItem.products}
-      height={heights[index]}
-    />
+  return (
+    <div className={gridContainer}>
+      {(combinedItems || []).map((item) => (
+        <div key={item.id} className={gridItem}>
+          {"slug" in item ? (
+            <AdvertisementCard
+              slug={item.slug}
+              description={item.description}
+              urls={item.urls}
+              alt_description={item.alt_description}
+            />
+          ) : (
+            <CardImg
+              key={item.id}
+              url={item.url}
+              altText={item.altText}
+              id={item.id}
+              products={item.products}
+            />
+          )}
+        </div>
+      ))}
+    </div>
   );
 };

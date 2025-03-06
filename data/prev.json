@@ -13,7 +13,7 @@
                         "y": 72.3
                     },
                     "href": "https://www.ikea.com/sg/en/p/brimnes-day-bed-frame-with-2-drawers-white-30503655/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 0,
                     "imageId": "C9692C29-FC1D-4E1C-855446F34DB1728D",
                     "hide": true
@@ -157,7 +157,7 @@
                         "y": 69.19999999999999
                     },
                     "href": "https://www.ikea.com/sg/en/p/froetorp-side-table-anthracite-marble-effect-black-glass-10497580/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "5354D0CE-CA56-4137-9D06B042C8F402EC",
                     "hide": true
@@ -169,7 +169,7 @@
                         "y": 25.4
                     },
                     "href": "https://www.ikea.com/sg/en/p/skaftet-floor-lamp-base-arched-black-70405525/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-start",
                     "index": 2,
                     "imageId": "5354D0CE-CA56-4137-9D06B042C8F402EC",
                     "hide": true
@@ -193,7 +193,7 @@
                         "y": 74.4
                     },
                     "href": "https://www.ikea.com/sg/en/p/froetorp-coffee-table-anthracite-marble-effect-black-glass-50497583/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-start",
                     "index": 4,
                     "imageId": "5354D0CE-CA56-4137-9D06B042C8F402EC",
                     "hide": true
@@ -225,7 +225,7 @@
                         "y": 32.2
                     },
                     "href": "https://www.ikea.com/sg/en/p/merete-room-darkening-curtains-1-pair-with-eyelets-white-70172205/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-start",
                     "index": 1,
                     "imageId": "0198F7F9-CEBD-4573-8329A01798AB647F",
                     "hide": true
@@ -269,7 +269,7 @@
                         "y": 20
                     },
                     "href": "https://www.ikea.com/sg/en/p/arstid-wall-lamp-nickel-plated-white-60163876/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-start",
                     "index": 2,
                     "imageId": "DBE7D88D-9C98-473D-AF020EB1B635A43F",
                     "hide": true
@@ -313,7 +313,7 @@
                         "y": 80.4
                     },
                     "href": "https://www.ikea.com/sg/en/p/ingolf-stool-white-00362727/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "B92EB3E0-CEA1-41A4-AC13292D2B8D12FF",
                     "hide": true
@@ -325,7 +325,7 @@
                         "y": 73
                     },
                     "href": "https://www.ikea.com/sg/en/p/helmer-drawer-unit-on-castors-white-90251046/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-start",
                     "index": 2,
                     "imageId": "B92EB3E0-CEA1-41A4-AC13292D2B8D12FF",
                     "hide": true
@@ -381,7 +381,7 @@
                         "y": 25.5
                     },
                     "href": "https://www.ikea.com/sg/en/p/skubb-storage-with-6-compartments-white-80245881/",
-                    "tagPosition": "bottom-left",
+                    "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "458DA50A-B2FB-42D5-B140F63C4D781386",
                     "hide": true
@@ -393,7 +393,7 @@
                         "y": 25.3
                     },
                     "href": "https://www.ikea.com/sg/en/p/fubbla-led-wall-lamp-white-00381599/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-start",
                     "index": 2,
                     "imageId": "458DA50A-B2FB-42D5-B140F63C4D781386",
                     "hide": true
@@ -437,7 +437,7 @@
                         "y": 71.2
                     },
                     "href": "https://www.ikea.com/sg/en/p/landskrona-armchair-gunnared-light-green-wood-s39269728/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "C0852402-93EE-42D5-ABCD304509E3D6DF",
                     "hide": true
@@ -469,7 +469,7 @@
                         "y": 13.700000000000001
                     },
                     "href": "https://www.ikea.com/sg/en/p/skadis-pegboard-white-30320806/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-start",
                     "index": 1,
                     "imageId": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
                     "hide": true
@@ -493,7 +493,7 @@
                         "y": 25
                     },
                     "href": "https://www.ikea.com/sg/en/p/svalka-champagne-glass-clear-glass-80137805/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-start",
                     "index": 3,
                     "imageId": "22573E7A-F5FF-4131-ACDB98F043DC78EA",
                     "hide": true
@@ -549,7 +549,7 @@
                         "y": 18.9
                     },
                     "href": "https://www.ikea.com/sg/en/p/tertial-work-lamp-dark-grey-50355395/",
-                    "tagPosition": "bottom-left",
+                    "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "576528D7-D098-490B-97168B9A4F3DDF5E",
                     "hide": true
@@ -561,7 +561,7 @@
                         "y": 78.10000000000001
                     },
                     "href": "https://www.ikea.com/sg/en/p/gladom-tray-table-black-00411997/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 2,
                     "imageId": "576528D7-D098-490B-97168B9A4F3DDF5E",
                     "hide": true
@@ -625,7 +625,7 @@
                         "y": 23.5
                     },
                     "href": "https://www.ikea.com/sg/en/p/ikea-365-jar-with-lid-glass-s79276816/",
-                    "tagPosition": "bottom-left",
+                    "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "8A460AC3-3B3E-4AD6-B024CAA09B6A8204",
                     "hide": true
@@ -637,7 +637,7 @@
                         "y": 30.5
                     },
                     "href": "https://www.ikea.com/sg/en/p/fjaellbo-wall-shelf-black-00430585/",
-                    "tagPosition": "bottom-right",
+                    "tagPosition": "bottom-start",
                     "index": 2,
                     "imageId": "8A460AC3-3B3E-4AD6-B024CAA09B6A8204",
                     "hide": true
@@ -701,7 +701,7 @@
                         "y": 71.89999999999999
                     },
                     "href": "https://www.ikea.com/sg/en/p/kungsfors-kitchen-trolley-stainless-steel-90334933/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-start",
                     "index": 0,
                     "imageId": "4095C03C-308E-42ED-BC82451EDAB1E046",
                     "hide": true
@@ -745,7 +745,7 @@
                         "y": 73.5
                     },
                     "href": "https://www.ikea.com/sg/en/p/landskrona-footstool-gunnared-light-green-wood-s99269749/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "2E3CACAF-E1A0-4389-836258DD8850D258",
                     "hide": true
@@ -765,7 +765,7 @@
                         "y": 80.2
                     },
                     "href": "https://www.ikea.com/sg/en/p/droena-box-white-70262828/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 0,
                     "imageId": "D759AD64-405F-421D-94FAC855C6FC1603",
                     "hide": true
@@ -809,7 +809,7 @@
                         "y": 91
                     },
                     "href": "https://www.ikea.com/sg/en/p/vindum-rug-high-pile-white-90344989/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "3CA1D0BC-11F5-41D9-931C183377528016",
                     "hide": true
@@ -841,7 +841,7 @@
                         "y": 33.800000000000004
                     },
                     "href": "https://www.ikea.com/sg/en/p/mammut-childrens-stool-in-outdoor-yellow-90382325/",
-                    "tagPosition": "bottom-left",
+                    "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "C624D591-655E-45E4-AE7A97AD67A96749",
                     "hide": true
@@ -853,7 +853,7 @@
                         "y": 67.30000000000001
                     },
                     "href": "https://www.ikea.com/sg/en/p/marius-stool-white-30184050/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 2,
                     "imageId": "C624D591-655E-45E4-AE7A97AD67A96749",
                     "hide": true
@@ -885,7 +885,7 @@
                         "y": 93.4
                     },
                     "href": "https://www.ikea.com/sg/en/p/ringhult-drawer-front-high-gloss-white-50274257/",
-                    "tagPosition": "top-left",
+                    "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "FB512203-AD03-4576-BB0F33072BD01CC4",
                     "hide": true
@@ -897,7 +897,7 @@
                         "y": 70.6
                     },
                     "href": "https://www.ikea.com/sg/en/p/intressant-spice-mill-acacia-30301898/",
-                    "tagPosition": "top-right",
+                    "tagPosition": "top-start",
                     "index": 2,
                     "imageId": "FB512203-AD03-4576-BB0F33072BD01CC4",
                     "hide": true

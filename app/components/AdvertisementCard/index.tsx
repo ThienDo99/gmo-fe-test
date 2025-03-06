@@ -112,7 +112,6 @@ export const Index = ({
   alt_description,
   isLoading,
   onClick,
-  height = 150,
   slug,
 }: Partial<UnsplashPhoto>) => {
   return (
@@ -122,9 +121,6 @@ export const Index = ({
       tabIndex={0}
       onClick={onClick}
       onKeyDown={() => {}}
-      style={{
-        gridRowEnd: `span ${Math.ceil(height / 10)}`,
-      }}
     >
       <div className={slugContainer}>{slug}</div>
       {isLoading ? (

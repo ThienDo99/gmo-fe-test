@@ -1,4 +1,4 @@
-import { Fragment, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { MetaFunction } from "@remix-run/node";
 import { isFibonacci } from "~/utils/isFibonacci";
 import { UnsplashPhoto } from "~/components/AdvertisementCard";
@@ -127,16 +127,7 @@ export default function Index() {
               videoRef={(el) => (videoRefs.current[index] = el)}
               src={video_link}
             />
-            <div
-              className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-2 px-2 sm:p-4"
-              style={{ gridAutoRows: "10px" }}
-            >
-              {(items || []).map((item, idx) => (
-                <Fragment key={item.id}>
-                  <MasonryLayout combinedItem={item} index={idx} />
-                </Fragment>
-              ))}
-            </div>
+            <MasonryLayout combinedItems={items} />
           </div>
         ))}
       </InfiniteScroll>

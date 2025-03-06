@@ -13,13 +13,7 @@ interface CardImgProps {
   id: string;
 }
 
-export const Index = ({
-  url,
-  altText,
-  height = 150,
-  products,
-  id,
-}: CardImgProps) => {
+export const Index = ({ url, altText, products, id }: CardImgProps) => {
   const [hoveredImage, setHoveredImage] = useState<string | null>(null);
   const [clickedTags, setClickedTags] = useState<string[]>([]);
   const [hoveredTag, setHoveredTag] = useState<string | null>(null);
@@ -47,9 +41,6 @@ export const Index = ({
       className={cardImgContainer}
       role="button"
       tabIndex={0}
-      style={{
-        gridRowEnd: `span ${Math.ceil(height / 10)}`,
-      }}
       onClick={isMobile ? handleImageClick : undefined}
       onMouseEnter={!isMobile ? () => setHoveredImage(id) : undefined}
       onMouseLeave={

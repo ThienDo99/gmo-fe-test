@@ -10,6 +10,7 @@ export const cardImgContainer = style({
   cursor: "pointer",
   display: "inline-block",
   width: "100%",
+  aspectRatio: "3 / 4",
 });
 
 export const imgStyle = style({
