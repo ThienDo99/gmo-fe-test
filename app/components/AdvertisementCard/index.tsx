@@ -1,3 +1,11 @@
+import {
+  cardStyle,
+  centerItemStyle,
+  imageStyle,
+  slugContainer,
+} from "./style.css";
+import Loader from "../Loader";
+
 interface AlternativeSlugs {
   en: string;
   es: string;
@@ -99,7 +107,7 @@ export interface UnsplashPhoto {
   onClick: () => void;
 }
 
-export const AdvertisementCard = ({
+export const Index = ({
   urls,
   alt_description,
   isLoading,
@@ -109,11 +117,7 @@ export const AdvertisementCard = ({
 }: Partial<UnsplashPhoto>) => {
   return (
     <div
-      className={`relative break-inside-avoid p-4 rounded-lg shadow-lg transition-all duration-300 ${
-        isLoading
-          ? "bg-white border border-gray-300"
-          : "text-white cursor-pointer hover:opacity-80"
-      }`}
+      className={cardStyle[isLoading ? "loading" : "notLoading"]}
       role="button"
       tabIndex={0}
       onClick={onClick}
@@ -122,20 +126,14 @@ export const AdvertisementCard = ({
         gridRowEnd: `span ${Math.ceil(height / 10)}`,
       }}
     >
-      <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-3 py-1 text-sm font-semibold rounded">
-        {slug}
-      </div>
+      <div className={slugContainer}>{slug}</div>
       {isLoading ? (
-        <div className="flex items-center justify-center h-full">
-          <div className="w-6 h-6 border-1 border-t-transparent rounded-full animate-spin"></div>
+        <div className={centerItemStyle}>
+          <Loader />
         </div>
       ) : (
         <>
-          <img
-            src={urls?.thumb}
-            alt={alt_description}
-            className="w-full h-full object-cover rounded-lg"
-          />
+          <img src={urls?.thumb} alt={alt_description} className={imageStyle} />
         </>
       )}
     </div>

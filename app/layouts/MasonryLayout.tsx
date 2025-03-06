@@ -1,8 +1,9 @@
-import { CardImg } from "../components/CardImg";
 import {
-  AdvertisementCard,
   UnsplashPhoto,
-} from "../components/AdvertisementCard";
+  Index as AdvertisementCard,
+} from "~/components/AdvertisementCard";
+import { Index as CardImg } from "../components/CardImg";
+
 import { IProduct } from "~/types/response";
 
 export interface ImageData {

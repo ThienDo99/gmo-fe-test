@@ -1,8 +1,9 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import { Tooltip } from "@mui/material";
 import { useState } from "react";
-import { IProduct } from "~/types/response";
-import useIsMobile from "~/hooks/useIsMobile";
+import useIsMobile from "../../hooks/useIsMobile";
+import { IProduct } from "../../types/response";
+import { cardImgContainer, imgStyle } from "./style.css";
 
 interface CardImgProps {
   url: string;
@@ -12,7 +13,7 @@ interface CardImgProps {
   id: string;
 }
 
-export const CardImg = ({
+export const Index = ({
   url,
   altText,
   height = 150,
@@ -43,7 +44,7 @@ export const CardImg = ({
 
   return (
     <div
-      className="relative p-0 rounded-lg shadow-lg transition-all duration-300 text-white cursor-pointer inline-block w-full"
+      className={cardImgContainer}
       role="button"
       tabIndex={0}
       style={{
@@ -60,11 +61,7 @@ export const CardImg = ({
           : undefined
       }
     >
-      <img
-        src={url}
-        alt={altText}
-        className="w-full h-full object-cover rounded-lg absolute"
-      />
+      <img src={url} alt={altText} className={imgStyle} />
 
       {(hoveredImage === id || isImageClicked) &&
         products?.map(

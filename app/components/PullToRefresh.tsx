@@ -11,41 +11,41 @@ const PullToRefresh = ({ onRefresh }: IProps) => {
   const touchStartY = useRef(0);
   const touchEndY = useRef(0);
 
+  const handleTouchStart = (e: TouchEvent) => {
+    touchStartY.current = e.touches[0].clientY;
+    setIsPulling(false);
+  };
+
+  const handleTouchMove = (e: TouchEvent) => {
+    const distance = e.touches[0].clientY - touchStartY.current;
+
+    if (distance > 20 && window.scrollY === 0) {
+      setIsPulling(true);
+    }
+  };
+
+  const handleTouchEnd = async (e: TouchEvent) => {
+    touchEndY.current = e.changedTouches[0].clientY;
+    const distance = touchEndY.current - touchStartY.current;
+
+    if (distance > 50 && window.scrollY === 0) {
+      setIsPulling(false);
+      setIsRefreshing(true);
+
+      try {
+        await onRefresh();
+      } finally {
+        setTimeout(() => {
+          setIsRefreshing(false);
+        }, 500);
+      }
+    } else {
+      setIsPulling(false);
+    }
+  };
+
   useEffect(
     () => {
-      const handleTouchStart = (e: TouchEvent) => {
-        touchStartY.current = e.touches[0].clientY;
-        setIsPulling(false);
-      };
-
-      const handleTouchMove = (e: TouchEvent) => {
-        const distance = e.touches[0].clientY - touchStartY.current;
-
-        if (distance > 20 && window.scrollY === 0) {
-          setIsPulling(true);
-        }
-      };
-
-      const handleTouchEnd = async (e: TouchEvent) => {
-        touchEndY.current = e.changedTouches[0].clientY;
-        const distance = touchEndY.current - touchStartY.current;
-
-        if (distance > 50 && window.scrollY === 0) {
-          setIsPulling(false);
-          setIsRefreshing(true);
-
-          try {
-            await onRefresh();
-          } finally {
-            setTimeout(() => {
-              setIsRefreshing(false);
-            }, 500);
-          }
-        } else {
-          setIsPulling(false);
-        }
-      };
-
       document.addEventListener("touchstart", handleTouchStart);
       document.addEventListener("touchmove", handleTouchMove);
       document.addEventListener("touchend", handleTouchEnd);
