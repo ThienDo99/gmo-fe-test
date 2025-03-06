@@ -16,7 +16,8 @@
                     "tagPosition": "top",
                     "index": 0,
                     "imageId": "F6CB5D23-37AE-4A40-86E098A8CBA907E0",
-                    "hide": true
+                    "hide": true,
+                    "price": 150
                 }
             ],
             "index": 0
@@ -36,7 +37,8 @@
                     "tagPosition": "top",
                     "index": 0,
                     "imageId": "66954817-0D04-4812-90824A25E6AE7FCE",
-                    "hide": true
+                    "hide": true,
+                    "price": 160
                 },
                 {
                     "id": "40378670",
@@ -48,7 +50,8 @@
                     "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "66954817-0D04-4812-90824A25E6AE7FCE",
-                    "hide": true
+                    "hide": true,
+                    "price": 170
                 },
                 {
                     "id": "60378669",
@@ -60,7 +63,8 @@
                     "tagPosition": "left",
                     "index": 2,
                     "imageId": "66954817-0D04-4812-90824A25E6AE7FCE",
-                    "hide": true
+                    "hide": true,
+                    "price": 155
                 },
                 {
                     "id": "20248444",
@@ -72,7 +76,8 @@
                     "tagPosition": "top-end",
                     "index": 3,
                     "imageId": "66954817-0D04-4812-90824A25E6AE7FCE",
-                    "hide": true
+                    "hide": true,
+                    "price": 130
                 },
                 {
                     "id": "30357786",
@@ -104,7 +109,8 @@
                     "tagPosition": "top-start",
                     "index": 0,
                     "imageId": "FCD0EC5D-D6DF-4137-AB25D713FE0A6237",
-                    "hide": true
+                    "hide": true,
+                    "price": 180
                 }
             ],
             "index": 2
@@ -122,6 +128,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/hemnes-tv-bench-black-brown-light-brown-70452300/",
                     "tagPosition": "top-end",
+                    "price": 356,
                     "index": 0,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -134,6 +141,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/sandared-pouffe-beige-70385315/",
                     "tagPosition": "top",
+                    "price": 412,
                     "index": 1,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -146,6 +154,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/visbaeck-poster-hanger-bamboo-70421766/",
                     "tagPosition": "bottom-end",
+                    "price": 275,
                     "index": 2,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -158,6 +167,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/hemnes-bookcase-black-brown-light-brown-70452296/",
                     "tagPosition": "bottom-start",
+                    "price": 498,
                     "index": 3,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -170,6 +180,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/snidad-basket-rattan-00394945/",
                     "tagPosition": "top-end",
+                    "price": 233,
                     "index": 4,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -182,6 +193,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/knoppaeng-frame-with-poster-garden-20465772/",
                     "tagPosition": "bottom-end",
+                    "price": 489,
                     "index": 5,
                     "imageId": "0658B35C-0DE8-4ACC-A8DACE371D5CCD8E",
                     "hide": true
@@ -202,6 +214,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/lustigkurre-basket-natural-water-hyacinth-seagrass-10457409/",
                     "tagPosition": "top",
+                    "price": 327,
                     "index": 0,
                     "imageId": "0D8BF9C1-2464-47AA-A5278713E29327CF",
                     "hide": true
@@ -214,6 +227,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/utaker-stackable-bed-pine-70360485/",
                     "tagPosition": "left",
+                    "price": 462,
                     "index": 1,
                     "imageId": "0D8BF9C1-2464-47AA-A5278713E29327CF",
                     "hide": true
@@ -226,6 +240,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/bergshult-sandshult-wall-shelf-white-white-stained-aspen-s09326023/",
                     "tagPosition": "right",
+                    "price": 215,
                     "index": 2,
                     "imageId": "0D8BF9C1-2464-47AA-A5278713E29327CF",
                     "hide": true
@@ -238,6 +253,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/naevlinge-led-clamp-spotlight-white-10449891/",
                     "tagPosition": "bottom-end",
+                    "price": 491,
                     "index": 3,
                     "imageId": "0D8BF9C1-2464-47AA-A5278713E29327CF",
                     "hide": true
@@ -250,6 +266,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/fryken-box-with-lid-set-of-3-seagrass-60328146/",
                     "tagPosition": "bottom",
+                    "price": 378,
                     "index": 4,
                     "imageId": "0D8BF9C1-2464-47AA-A5278713E29327CF",
                     "hide": true
@@ -272,6 +289,7 @@
                     "tagPosition": "top-start",
                     "index": 0,
                     "imageId": "E51222D5-0172-4337-B44DB96D668F18F5",
+                    "price": 378,
                     "hide": true
                 },
                 {
@@ -284,6 +302,7 @@
                     "tagPosition": "top",
                     "index": 1,
                     "imageId": "E51222D5-0172-4337-B44DB96D668F18F5",
+                    "price": 378,
                     "hide": true
                 },
                 {
@@ -295,6 +314,7 @@
                     "href": "https://www.ikea.com/sg/en/p/djungelskog-soft-toy-assorted-designs-00402846/",
                     "tagPosition": "top",
                     "index": 2,
+                    "price": 378,
                     "imageId": "E51222D5-0172-4337-B44DB96D668F18F5",
                     "hide": true
                 },
@@ -307,6 +327,7 @@
                     "href": "https://www.ikea.com/sg/en/p/knardrup-rug-low-pile-pale-pink-00492620/",
                     "tagPosition": "top-end",
                     "index": 3,
+                    "price": 378,
                     "imageId": "E51222D5-0172-4337-B44DB96D668F18F5",
                     "hide": true
                 },
@@ -319,6 +340,7 @@
                     "href": "https://www.ikea.com/sg/en/p/kransborre-cushion-light-pink-40486655/",
                     "tagPosition": "top",
                     "index": 4,
+                    "price": 378,
                     "imageId": "E51222D5-0172-4337-B44DB96D668F18F5",
                     "hide": true
                 },
@@ -331,6 +353,7 @@
                     "href": "https://www.ikea.com/sg/en/p/vimle-3-seat-sofa-with-wide-armrests-saxemara-light-blue-s59401468/",
                     "tagPosition": "top",
                     "index": 5,
+                    "price": 378,
                     "imageId": "E51222D5-0172-4337-B44DB96D668F18F5",
                     "hide": true
                 }
@@ -352,6 +375,7 @@
                     "tagPosition": "top",
                     "index": 0,
                     "imageId": "41611D27-144E-4183-B5907D25FFDC5166",
+                    "price": 378,
                     "hide": true
                 },
                 {
@@ -364,6 +388,7 @@
                     "tagPosition": "bottom-end",
                     "index": 1,
                     "imageId": "41611D27-144E-4183-B5907D25FFDC5166",
+                    "price": 378,
                     "hide": true
                 },
                 {
@@ -376,6 +401,7 @@
                     "tagPosition": "left",
                     "index": 2,
                     "imageId": "41611D27-144E-4183-B5907D25FFDC5166",
+                    "price": 378,
                     "hide": true
                 },
                 {
@@ -387,6 +413,7 @@
                     "href": "https://www.ikea.com/sg/en/p/vollerslev-rug-high-pile-dark-blue-40492543/",
                     "tagPosition": "top",
                     "index": 3,
+                    "price": 378,
                     "imageId": "41611D27-144E-4183-B5907D25FFDC5166",
                     "hide": true
                 },
@@ -399,6 +426,7 @@
                     "href": "https://www.ikea.com/sg/en/p/landskrona-armchair-djuparp-dark-blue-wood-s49415786/",
                     "tagPosition": "right",
                     "index": 4,
+                    "price": 378,
                     "imageId": "41611D27-144E-4183-B5907D25FFDC5166",
                     "hide": true
                 },
@@ -411,6 +439,7 @@
                     "href": "https://www.ikea.com/sg/en/p/landskrona-footstool-djuparp-dark-blue-wood-s69415808/",
                     "tagPosition": "top-start",
                     "index": 5,
+                    "price": 378,
                     "imageId": "41611D27-144E-4183-B5907D25FFDC5166",
                     "hide": true
                 }
@@ -432,6 +461,7 @@
                     "tagPosition": "top",
                     "index": 0,
                     "imageId": "3402DA80-2307-4103-80D35CE148FC2F7E",
+                    "price": 378,
                     "hide": true
                 },
                 {
@@ -443,6 +473,7 @@
                     "href": "https://www.ikea.com/sg/en/p/sandared-pouffe-grey-90385319/",
                     "tagPosition": "top-end",
                     "index": 1,
+                    "price": 378,
                     "imageId": "3402DA80-2307-4103-80D35CE148FC2F7E",
                     "hide": true
                 },
@@ -455,6 +486,7 @@
                     "href": "https://www.ikea.com/sg/en/p/sandared-pouffe-beige-70385315/",
                     "tagPosition": "left",
                     "index": 2,
+                    "price": 478,
                     "imageId": "3402DA80-2307-4103-80D35CE148FC2F7E",
                     "hide": true
                 },
@@ -467,6 +499,7 @@
                     "href": "https://www.ikea.com/sg/en/p/gurli-cushion-cover-white-10281151/",
                     "tagPosition": "right",
                     "index": 3,
+                    "price": 478,
                     "imageId": "3402DA80-2307-4103-80D35CE148FC2F7E",
                     "hide": true
                 }
@@ -488,6 +521,7 @@
                     "tagPosition": "top-end",
                     "index": 0,
                     "imageId": "18432CD7-5F30-49A4-A74DAFFC022AACA9",
+                    "price": 178,
                     "hide": true
                 }
             ],
@@ -508,6 +542,7 @@
                     "tagPosition": "right",
                     "index": 0,
                     "imageId": "B410D712-5E6F-4E13-919041C85EE05A0F",
+                    "price": 498,
                     "hide": true
                 },
                 {
@@ -519,6 +554,7 @@
                     "href": "https://www.ikea.com/sg/en/p/bergshult-pershult-wall-shelf-combination-white-white-s39291159/",
                     "tagPosition": "bottom",
                     "index": 1,
+                    "price": 198,
                     "imageId": "B410D712-5E6F-4E13-919041C85EE05A0F",
                     "hide": true
                 },
@@ -532,6 +568,7 @@
                     "tagPosition": "top-end",
                     "index": 2,
                     "imageId": "B410D712-5E6F-4E13-919041C85EE05A0F",
+                    "price": 236,
                     "hide": true
                 }
             ],
@@ -550,6 +587,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/vimle-footstool-with-storage-saxemara-black-blue-s49392600/",
                     "tagPosition": "bottom-end",
+                    "price": 237,
                     "index": 0,
                     "imageId": "5E4DBC02-BEAB-4961-AE8E321C8354C2EB",
                     "hide": true
@@ -562,6 +600,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/knardrup-rug-low-pile-pale-pink-00492620/",
                     "tagPosition": "top-start",
+                    "price": 238,
                     "index": 1,
                     "imageId": "5E4DBC02-BEAB-4961-AE8E321C8354C2EB",
                     "hide": true
@@ -575,6 +614,7 @@
                     "href": "https://www.ikea.com/sg/en/p/borgeby-coffee-table-birch-veneer-70449402/",
                     "tagPosition": "bottom-start",
                     "index": 2,
+                    "price": 288,
                     "imageId": "5E4DBC02-BEAB-4961-AE8E321C8354C2EB",
                     "hide": true
                 }
@@ -594,6 +634,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/idanaes-wardrobe-white-40458836/",
                     "tagPosition": "left",
+                    "price": 347,
                     "index": 0,
                     "imageId": "68DBD022-6B1C-4ECB-BC6A114E4B3716CB",
                     "hide": true
@@ -606,6 +647,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/bergmund-chair-white-orrsta-light-grey-s89387734/",
                     "tagPosition": "top",
+                    "price": 289,
                     "index": 1,
                     "imageId": "68DBD022-6B1C-4ECB-BC6A114E4B3716CB",
                     "hide": true
@@ -618,6 +660,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/malm-dressing-table-white-40355409/",
                     "tagPosition": "top-start",
+                    "price": 451,
                     "index": 2,
                     "imageId": "68DBD022-6B1C-4ECB-BC6A114E4B3716CB",
                     "hide": true
@@ -630,6 +673,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/regnskur-pendant-lamp-shade-round-white-10437949/",
                     "tagPosition": "bottom-start",
+                    "price": 232,
                     "index": 3,
                     "imageId": "68DBD022-6B1C-4ECB-BC6A114E4B3716CB",
                     "hide": true
@@ -642,6 +686,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/idanaes-cabinet-with-bi-folding-doors-white-00458824/",
                     "tagPosition": "right",
+                    "price": 476,
                     "index": 4,
                     "imageId": "68DBD022-6B1C-4ECB-BC6A114E4B3716CB",
                     "hide": true
@@ -654,6 +699,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/idanaes-open-wardrobe-white-00458843/",
                     "tagPosition": "top",
+                    "price": 305,
                     "index": 5,
                     "imageId": "68DBD022-6B1C-4ECB-BC6A114E4B3716CB",
                     "hide": true
@@ -674,6 +720,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/stockholm-nest-of-tables-set-of-2-walnut-veneer-70353079/",
                     "tagPosition": "right",
+                    "price": 356,
                     "index": 0,
                     "imageId": "3C266520-A465-4F30-9C8A4542B9E22234",
                     "hide": true
@@ -686,6 +733,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/bakglad-cake-stand-80485263/",
                     "tagPosition": "right",
+                    "price": 479,
                     "index": 1,
                     "imageId": "3C266520-A465-4F30-9C8A4542B9E22234",
                     "hide": true
@@ -698,6 +746,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/dyrgrip-red-wine-glass-clear-glass-00309301/",
                     "tagPosition": "top",
+                    "price": 245,
                     "index": 2,
                     "imageId": "3C266520-A465-4F30-9C8A4542B9E22234",
                     "hide": true
@@ -710,6 +759,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/milsbo-glass-door-cabinet-anthracite-10396449/",
                     "tagPosition": "bottom",
+                    "price": 399,
                     "index": 3,
                     "imageId": "3C266520-A465-4F30-9C8A4542B9E22234",
                     "hide": true
@@ -722,6 +772,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/dyrgrip-glass-clear-glass-10309305/",
                     "tagPosition": "left",
+                    "price": 287,
                     "index": 4,
                     "imageId": "3C266520-A465-4F30-9C8A4542B9E22234",
                     "hide": true
@@ -734,6 +785,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/aepplaryd-2-seat-sofa-djuparp-dark-blue-10504279/",
                     "tagPosition": "bottom-start",
+                    "price": 422,
                     "index": 5,
                     "imageId": "3C266520-A465-4F30-9C8A4542B9E22234",
                     "hide": true
@@ -754,6 +806,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/paerkla-storage-case-10395384/",
                     "tagPosition": "top",
+                    "price": 347,
                     "index": 0,
                     "imageId": "16C9D869-5E84-4697-89E65332842240F6",
                     "hide": true
@@ -766,6 +819,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/bekvaem-spice-rack-aspen-00487176/",
                     "tagPosition": "bottom-end",
+                    "price": 421,
                     "index": 1,
                     "imageId": "16C9D869-5E84-4697-89E65332842240F6",
                     "hide": true
@@ -786,6 +840,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/utaker-stackable-bed-pine-70360485/",
                     "tagPosition": "top",
+                    "price": 357,
                     "index": 0,
                     "imageId": "3AA71E5B-C671-4C4C-A95221BE1414775B",
                     "hide": true
@@ -798,6 +853,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/tingby-side-table-on-castors-white-60295928/",
                     "tagPosition": "top-end",
+                    "price": 421,
                     "index": 1,
                     "imageId": "3AA71E5B-C671-4C4C-A95221BE1414775B",
                     "hide": true
@@ -810,6 +866,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/bekvaem-spice-rack-aspen-00487176/",
                     "tagPosition": "top",
+                    "price": 243,
                     "index": 2,
                     "imageId": "3AA71E5B-C671-4C4C-A95221BE1414775B",
                     "hide": true
@@ -822,6 +879,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/regolit-pendant-lamp-shade-white-handmade-00172789/",
                     "tagPosition": "bottom",
+                    "price": 389,
                     "index": 3,
                     "imageId": "3AA71E5B-C671-4C4C-A95221BE1414775B",
                     "hide": true
@@ -842,6 +900,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/fridans-block-out-roller-blind-white-30396877/",
                     "tagPosition": "right",
+                    "price": 342,
                     "index": 0,
                     "imageId": "9A6C6919-1294-4E7D-BB62165B51C9612F",
                     "hide": true
@@ -854,6 +913,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/vidga-single-track-rail-included-ceiling-fittings-white-00492917/",
                     "tagPosition": "bottom",
+                    "price": 467,
                     "index": 1,
                     "imageId": "9A6C6919-1294-4E7D-BB62165B51C9612F",
                     "hide": true
@@ -866,6 +926,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/hilja-curtains-1-pair-with-heading-tape-grey-20390734/",
                     "tagPosition": "left",
+                    "price": 259,
                     "index": 2,
                     "imageId": "9A6C6919-1294-4E7D-BB62165B51C9612F",
                     "hide": true
@@ -886,6 +947,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/kyrre-stool-birch-80420040/",
                     "tagPosition": "top-end",
+                    "price": 327,
                     "index": 0,
                     "imageId": "C536ADB3-AB07-4D7A-8CD2225FC0B95183",
                     "hide": true
@@ -898,6 +960,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/tjena-magazine-file-white-90395417/",
                     "tagPosition": "bottom-end",
+                    "price": 456,
                     "index": 1,
                     "imageId": "C536ADB3-AB07-4D7A-8CD2225FC0B95183",
                     "hide": true
@@ -910,6 +973,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/besta-frame-white-10245851/",
                     "tagPosition": "bottom",
+                    "price": 239,
                     "index": 2,
                     "imageId": "C536ADB3-AB07-4D7A-8CD2225FC0B95183",
                     "hide": true
@@ -922,6 +986,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/bergshult-shelf-white-10430504/",
                     "tagPosition": "left",
+                    "price": 414,
                     "index": 3,
                     "imageId": "C536ADB3-AB07-4D7A-8CD2225FC0B95183",
                     "hide": true
@@ -934,6 +999,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/granhult-bracket-nickel-plated-10430537/",
                     "tagPosition": "left",
+                    "price": 281,
                     "index": 4,
                     "imageId": "C536ADB3-AB07-4D7A-8CD2225FC0B95183",
                     "hide": true
@@ -954,6 +1020,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/ekolsund-recliner-gunnared-light-brown-pink-s69297188/",
                     "tagPosition": "top",
+                    "price": 347,
                     "index": 0,
                     "imageId": "B44F76BA-F505-4B23-BC66EF8C191E5FE4",
                     "hide": true
@@ -966,6 +1033,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/ekolsund-recliner-gunnared-dark-grey-s09297191/",
                     "tagPosition": "right",
+                    "price": 421,
                     "index": 1,
                     "imageId": "B44F76BA-F505-4B23-BC66EF8C191E5FE4",
                     "hide": true
@@ -978,6 +1046,7 @@
                     },
                     "href": "https://www.ikea.com/sg/en/p/blanda-blank-serving-bowl-stainless-steel-40179699/",
                     "tagPosition": "right",
+                    "price": 263,
                     "index": 2,
                     "imageId": "B44F76BA-F505-4B23-BC66EF8C191E5FE4",
                     "hide": true
@@ -1000,6 +1069,7 @@
                     "tagPosition": "top",
                     "index": 0,
                     "imageId": "851980D1-7A50-4AD0-B1762E3275080DEC",
+                    "price": 263,
                     "hide": true
                 },
                 {
@@ -1012,6 +1082,7 @@
                     "tagPosition": "right",
                     "index": 1,
                     "imageId": "851980D1-7A50-4AD0-B1762E3275080DEC",
+                    "price": 263,
                     "hide": true
                 }
             ],
@@ -1032,6 +1103,7 @@
                     "tagPosition": "right",
                     "index": 0,
                     "imageId": "8471C8E1-330A-4559-B4948DE8D8F54F0A",
+                    "price": 263,
                     "hide": true
                 },
                 {
@@ -1044,6 +1116,7 @@
                     "tagPosition": "top-end",
                     "index": 1,
                     "imageId": "8471C8E1-330A-4559-B4948DE8D8F54F0A",
+                    "price": 263,
                     "hide": true
                 },
                 {
@@ -1056,6 +1129,7 @@
                     "tagPosition": "bottom",
                     "index": 2,
                     "imageId": "8471C8E1-330A-4559-B4948DE8D8F54F0A",
+                    "price": 263,
                     "hide": true
                 },
                 {
@@ -1068,6 +1142,7 @@
                     "tagPosition": "top",
                     "index": 3,
                     "imageId": "8471C8E1-330A-4559-B4948DE8D8F54F0A",
+                    "price": 263,
                     "hide": true
                 },
                 {
@@ -1080,6 +1155,7 @@
                     "tagPosition": "top",
                     "index": 4,
                     "imageId": "8471C8E1-330A-4559-B4948DE8D8F54F0A",
+                    "price": 263,
                     "hide": true
                 }
             ],

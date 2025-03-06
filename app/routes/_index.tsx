@@ -5,11 +5,10 @@ import { UnsplashPhoto } from "~/components/AdvertisementCard";
 import { MasonryLayout } from "~/layouts/MasonryLayout";
 import VideoPlayer from "~/components/VideoPlayer";
 import InfiniteScroll from "~/components/InfiniteScroll";
-import { DOMAIN_URL, FETCH_URL, totalPage } from "~/utils/constants";
+import { DOMAIN_URL, FETCH_URL, totalItem } from "~/utils/constants";
 import { IData } from "~/types/response";
 import { useLoaderData } from "@remix-run/react";
 import useIsMobile from "~/hooks/useIsMobile";
-import Loader from "~/components/Loader";
 import PullToRefresh from "~/components/PullToRefresh";
 import { fetcher } from "~/utils/helpers";
 
@@ -34,13 +33,14 @@ export const loader = async () => {
 export default function Index() {
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
   const [data, setData] = useState<IData[]>([]);
-  const [currentPage, setCurrentPage] = useState(0);
   const { advertisements } = useLoaderData<typeof loader>();
   const isMobile = useIsMobile();
-  const touchStartY = useRef(0);
-  const touchEndY = useRef(0);
-  const [isPulling, setIsPulling] = useState(false);
-  const [isLoadingPrev, setIsLoadingPrev] = useState(false);
+  const currentPage = useRef(1);
+  const isFetchPreviousApi = useRef(false);
+  const currentTotalItem = data.reduce(
+    (acc, { items }) => acc + items.length,
+    0
+  );
 
   const mapData = (currentData = []) => {
     let adIndex = 0;
@@ -62,6 +62,16 @@ export default function Index() {
       i++;
     }
     return finalData;
+  };
+
+  const fetchData = async (url: string) => {
+    return fetcher(url).then((newData) => {
+      const mappedData = {
+        video_link: newData.video_link,
+        items: mapData(newData.items),
+      };
+      setData((prev) => [...prev, mappedData] as IData[]);
+    });
   };
 
   useEffect(() => {
@@ -90,87 +100,27 @@ export default function Index() {
     };
   }, [data.length]);
 
-  useEffect(
-    () => {
-      currentPage &&
-        fetcher(FETCH_URL.get(currentPage) as string).then((newData) => {
-          const mappedData = {
-            video_link: newData.video_link,
-            items: mapData(newData.items),
-          };
-          setData((prev) => [...prev, mappedData] as IData[]);
-        });
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [currentPage]
-  );
-
   const onLoadMore = () => {
-    setCurrentPage((prev) => prev + 1);
+    fetchData(FETCH_URL.get(currentPage.current) as string).finally(() => {
+      currentPage.current = currentPage.current + 1;
+    });
   };
+  const onRefresh = async () => {
+    const PREV_API_KEY = 3;
 
-  useEffect(
-    () => {
-      if (!isMobile) return;
-
-      const handleTouchStart = (e: TouchEvent) => {
-        touchStartY.current = e.touches[0].clientY;
-        setIsPulling(false);
-      };
-
-      const handleTouchMove = (e: TouchEvent) => {
-        const distance = e.touches[0].clientY - touchStartY.current;
-
-        if (distance > 20 && window.scrollY === 0) {
-          setIsPulling(true);
-        }
-      };
-
-      const handleTouchEnd = (e: TouchEvent) => {
-        touchEndY.current = e.changedTouches[0].clientY;
-        const distance = touchEndY.current - touchStartY.current;
-
-        if (distance > 50 && window.scrollY === 0 && !isLoadingPrev) {
-          setIsLoadingPrev(true);
-          setIsPulling(false);
-
-          setTimeout(() => {
-            fetcher("../data/next.json")
-              .then((res) => {
-                const mappedData = {
-                  video_link: res.video_link,
-                  items: mapData(res.items),
-                };
-                setData((prev) => [mappedData, ...prev] as IData[]);
-              })
-              .finally(() => {
-                setIsLoadingPrev(false);
-              });
-          }, 0);
-        } else {
-          setIsPulling(false);
-        }
-      };
-
-      document.addEventListener("touchstart", handleTouchStart);
-      document.addEventListener("touchmove", handleTouchMove);
-      document.addEventListener("touchend", handleTouchEnd);
-
-      return () => {
-        document.removeEventListener("touchstart", handleTouchStart);
-        document.removeEventListener("touchmove", handleTouchMove);
-        document.removeEventListener("touchend", handleTouchEnd);
-      };
-    },
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isMobile, isLoadingPrev]
-  );
+    !isFetchPreviousApi.current &&
+      fetchData(FETCH_URL.get(PREV_API_KEY) as string).finally(() => {
+        isFetchPreviousApi.current = true;
+      });
+  };
 
   return (
     <>
-      {isPulling && <PullToRefresh />}
-      <InfiniteScroll hasMore={currentPage < totalPage} onLoadMore={onLoadMore}>
-        {isLoadingPrev && <Loader />}
+      {isMobile && <PullToRefresh onRefresh={onRefresh} />}
+      <InfiniteScroll
+        hasMore={currentTotalItem <= totalItem}
+        onLoadMore={onLoadMore}
+      >
         {data.map(({ video_link, items }, index) => (
           <div key={index}>
             <VideoPlayer

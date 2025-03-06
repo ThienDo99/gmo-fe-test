@@ -85,7 +85,7 @@ export const CardImg = ({
               >
                 <div
                   style={{
-                    position: "relative",
+                    position: "absolute",
                     top: `${dotCoordinates.y}%`,
                     left: `${dotCoordinates.x}%`,
                     width: "30px",
